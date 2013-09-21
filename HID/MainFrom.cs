@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.OleDb;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Globalization;
 using HID.BaseClass;
-using HID;
+using HID.Model;
 
 namespace HID
 {
-
     public partial class MainFrom : Form
     {
         public byte[] ReadBuffer = new byte[64];
@@ -239,7 +234,7 @@ namespace HID
             else if (e.Packet[1] == 0xBC)   //	采集 主板 ID
             {
                 //e.Packet[3 + 0];
-                FrmMBoard_ID frm_Mboard = new FrmMBoard_ID();
+                FrmMBoardID frm_Mboard = new FrmMBoardID();
                 //frm_Mboard.MBoard_ID = e.Packet[3 + 0].ToString("X2");
                 //frm_Mboard.MBoard_ID = str.Substring(2,12);
                 
@@ -858,7 +853,7 @@ namespace HID
         {
             //MessageBox.Show(dgv_IcData.SelectedRows[0].Cells["IC_ID"].Value.ToString());
             //strIC_ID = dgv_IcData.SelectedRows[0].Cells["IC_ID"].Value.ToString();
-            IC_DataShow_From FrmData = new IC_DataShow_From(this);
+            FrmICDataShow FrmData = new FrmICDataShow(this);
             string tstr= dgv_IcData.SelectedRows[0].Cells["IC_ID"].Value.ToString();
             //FrmData.IC_ID = Convert.ToInt32(tstr.Substring(0, 3)).ToString("X") + " " +
             //                Convert.ToInt32(tstr.Substring(3, 3)).ToString("X") + " " +

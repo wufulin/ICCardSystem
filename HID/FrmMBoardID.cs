@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Windows.Forms;
-
 using HID.BaseClass;
+using HID.Model;
 
 namespace HID
 {
-    public partial class FrmMBoard_ID : Form
+    public partial class FrmMBoardID : Form
     {
-        public FrmMBoard_ID()
+        private string _MBoard_ID;
+
+        public FrmMBoardID()
         {
             InitializeComponent();
-            lbe_mb_id.Text = "852741963";
+            lbe_mb_id.Text = @"852741963";
             tbx_mb_num.Text = MBoard_ID;
         }
-
-        private string _MBoard_ID;
 
         public string MBoard_ID
         {
@@ -25,11 +25,7 @@ namespace HID
         private void btn_add_mbid_Click(object sender, EventArgs e)
         {
             DBOperation bf = new DBOperation();
-            s_MainBoard_Data mb_data = new s_MainBoard_Data();
-            mb_data.MainBoard_ID = this.MBoard_ID;
-            mb_data.MainBoard_Num = tbx_mb_num.Text;
-            mb_data.Company_Name = tbx_Company.Text;
-
+            MainBoard mb_data = new MainBoard(this.MBoard_ID, tbx_mb_num.Text, tbx_Company.Text);
 
             if (bf.Find_MainBoard_Data(mb_data) == 1)
             {

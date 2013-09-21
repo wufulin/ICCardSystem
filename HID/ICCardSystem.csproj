@@ -78,12 +78,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClass\DBOperation.cs" />
-    <Compile Include="BaseClass\DataBase.cs" />
-    <Compile Include="BaseClass\DBHelper.cs" />
-    <Compile Include="CommonClass\DataCon.cs" />
-    <Compile Include="CommonClass\DataOperate.cs" />
-    <Compile Include="DriveDetector.cs">
+    <Compile Include="Common\DBOperation.cs" />
+    <Compile Include="Common\DataBase.cs" />
+    <Compile Include="Common\DBHelper.cs" />
+    <Compile Include="Model\cIC_Card_Data.cs" />
+    <Compile Include="Model\MainBoard.cs" />
+    <Compile Include="FrmDetector.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLogin.cs">
@@ -92,19 +92,19 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="hid.cs" />
-    <Compile Include="hidAPI.cs" />
-    <Compile Include="IC_DataShow_From.cs">
+    <Compile Include="API\hid.cs" />
+    <Compile Include="API\hidAPI.cs" />
+    <Compile Include="FrmICDataShow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IC_DataShow_From.Designer.cs">
-      <DependentUpon>IC_DataShow_From.cs</DependentUpon>
+    <Compile Include="FrmICDataShow.Designer.cs">
+      <DependentUpon>FrmICDataShow.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMBoard_ID.cs">
+    <Compile Include="FrmMBoardID.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMBoard_ID.Designer.cs">
-      <DependentUpon>FrmMBoard_ID.cs</DependentUpon>
+    <Compile Include="FrmMBoardID.Designer.cs">
+      <DependentUpon>FrmMBoardID.cs</DependentUpon>
     </Compile>
     <Compile Include="MainFrom.cs">
       <SubType>Form</SubType>
@@ -114,14 +114,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDetector.resx">
+      <DependentUpon>FrmDetector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IC_DataShow_From.resx">
-      <DependentUpon>IC_DataShow_From.cs</DependentUpon>
+    <EmbeddedResource Include="FrmICDataShow.resx">
+      <DependentUpon>FrmICDataShow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMBoard_ID.resx">
-      <DependentUpon>FrmMBoard_ID.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMBoardID.resx">
+      <DependentUpon>FrmMBoardID.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFrom.resx">
       <DependentUpon>MainFrom.cs</DependentUpon>
@@ -190,6 +193,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -117,7 +117,7 @@
             this.tbc_Fun.Location = new System.Drawing.Point(0, 0);
             this.tbc_Fun.Name = "tbc_Fun";
             this.tbc_Fun.SelectedIndex = 0;
-            this.tbc_Fun.Size = new System.Drawing.Size(843, 586);
+            this.tbc_Fun.Size = new System.Drawing.Size(843, 541);
             this.tbc_Fun.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tbc_Fun.TabIndex = 0;
             this.tbc_Fun.SelectedIndexChanged += new System.EventHandler(this.tbc_Fun_SelectedIndexChanged);
@@ -148,7 +148,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 52);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(835, 530);
+            this.tabPage1.Size = new System.Drawing.Size(835, 485);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "发卡";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -156,7 +156,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(40, 295);
+            this.label9.Location = new System.Drawing.Point(40, 272);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(89, 12);
             this.label9.TabIndex = 64;
@@ -165,7 +165,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(169, 291);
+            this.textBox2.Location = new System.Drawing.Point(169, 269);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(87, 21);
             this.textBox2.TabIndex = 65;
@@ -176,7 +176,7 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(29, 353);
+            this.comboBox1.Location = new System.Drawing.Point(29, 326);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(447, 20);
             this.comboBox1.TabIndex = 61;
@@ -186,9 +186,9 @@
             // 
             // btn_SetBoard
             // 
-            this.btn_SetBoard.Location = new System.Drawing.Point(671, 468);
+            this.btn_SetBoard.Location = new System.Drawing.Point(671, 432);
             this.btn_SetBoard.Name = "btn_SetBoard";
-            this.btn_SetBoard.Size = new System.Drawing.Size(109, 41);
+            this.btn_SetBoard.Size = new System.Drawing.Size(109, 38);
             this.btn_SetBoard.TabIndex = 59;
             this.btn_SetBoard.Text = "读主板ID";
             this.btn_SetBoard.UseVisualStyleBackColor = true;
@@ -202,16 +202,16 @@
             this.gbx_basic.Controls.Add(this.label7);
             this.gbx_basic.Controls.Add(this.tbxName);
             this.gbx_basic.Controls.Add(this.label6);
-            this.gbx_basic.Location = new System.Drawing.Point(20, 35);
+            this.gbx_basic.Location = new System.Drawing.Point(20, 32);
             this.gbx_basic.Name = "gbx_basic";
-            this.gbx_basic.Size = new System.Drawing.Size(199, 170);
+            this.gbx_basic.Size = new System.Drawing.Size(199, 157);
             this.gbx_basic.TabIndex = 58;
             this.gbx_basic.TabStop = false;
             this.gbx_basic.Text = "基本信息";
             // 
             // tbxIcNum
             // 
-            this.tbxIcNum.Location = new System.Drawing.Point(94, 99);
+            this.tbxIcNum.Location = new System.Drawing.Point(94, 91);
             this.tbxIcNum.Name = "tbxIcNum";
             this.tbxIcNum.Size = new System.Drawing.Size(87, 21);
             this.tbxIcNum.TabIndex = 63;
@@ -219,7 +219,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 105);
+            this.label8.Location = new System.Drawing.Point(6, 97);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 12);
             this.label8.TabIndex = 62;
@@ -227,7 +227,7 @@
             // 
             // tbxCarNum
             // 
-            this.tbxCarNum.Location = new System.Drawing.Point(94, 65);
+            this.tbxCarNum.Location = new System.Drawing.Point(94, 60);
             this.tbxCarNum.Name = "tbxCarNum";
             this.tbxCarNum.Size = new System.Drawing.Size(87, 21);
             this.tbxCarNum.TabIndex = 61;
@@ -235,7 +235,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 68);
+            this.label7.Location = new System.Drawing.Point(6, 63);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 12);
             this.label7.TabIndex = 60;
@@ -243,7 +243,7 @@
             // 
             // tbxName
             // 
-            this.tbxName.Location = new System.Drawing.Point(94, 26);
+            this.tbxName.Location = new System.Drawing.Point(94, 24);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(87, 21);
             this.tbxName.TabIndex = 59;
@@ -251,7 +251,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 31);
+            this.label6.Location = new System.Drawing.Point(6, 29);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 12);
             this.label6.TabIndex = 59;
@@ -260,20 +260,20 @@
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(591, 210);
+            this.textBox1.Location = new System.Drawing.Point(591, 194);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(178, 146);
+            this.textBox1.Size = new System.Drawing.Size(178, 135);
             this.textBox1.TabIndex = 42;
             this.textBox1.Visible = false;
             // 
             // btn_ReSet
             // 
-            this.btn_ReSet.Location = new System.Drawing.Point(519, 468);
+            this.btn_ReSet.Location = new System.Drawing.Point(519, 432);
             this.btn_ReSet.Name = "btn_ReSet";
-            this.btn_ReSet.Size = new System.Drawing.Size(107, 41);
+            this.btn_ReSet.Size = new System.Drawing.Size(107, 38);
             this.btn_ReSet.TabIndex = 57;
             this.btn_ReSet.Text = "恢复出厂设置卡";
             this.btn_ReSet.UseVisualStyleBackColor = true;
@@ -281,9 +281,9 @@
             // 
             // btn_set_bl
             // 
-            this.btn_set_bl.Location = new System.Drawing.Point(368, 468);
+            this.btn_set_bl.Location = new System.Drawing.Point(368, 432);
             this.btn_set_bl.Name = "btn_set_bl";
-            this.btn_set_bl.Size = new System.Drawing.Size(108, 41);
+            this.btn_set_bl.Size = new System.Drawing.Size(108, 38);
             this.btn_set_bl.TabIndex = 56;
             this.btn_set_bl.Text = "并联使用设置卡";
             this.btn_set_bl.UseVisualStyleBackColor = true;
@@ -291,9 +291,9 @@
             // 
             // btn_read
             // 
-            this.btn_read.Location = new System.Drawing.Point(65, 468);
+            this.btn_read.Location = new System.Drawing.Point(65, 432);
             this.btn_read.Name = "btn_read";
-            this.btn_read.Size = new System.Drawing.Size(107, 41);
+            this.btn_read.Size = new System.Drawing.Size(107, 38);
             this.btn_read.TabIndex = 55;
             this.btn_read.Text = "读卡";
             this.btn_read.UseVisualStyleBackColor = true;
@@ -306,9 +306,9 @@
             this.gbx_SetCount.Controls.Add(this.tbxCount);
             this.gbx_SetCount.Controls.Add(this.label1);
             this.gbx_SetCount.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.gbx_SetCount.Location = new System.Drawing.Point(237, 42);
+            this.gbx_SetCount.Location = new System.Drawing.Point(237, 39);
             this.gbx_SetCount.Name = "gbx_SetCount";
-            this.gbx_SetCount.Size = new System.Drawing.Size(263, 53);
+            this.gbx_SetCount.Size = new System.Drawing.Size(263, 49);
             this.gbx_SetCount.TabIndex = 54;
             this.gbx_SetCount.TabStop = false;
             this.gbx_SetCount.Text = "是否限定次数";
@@ -316,9 +316,9 @@
             // rdbtn_SetCountN
             // 
             this.rdbtn_SetCountN.AutoSize = true;
-            this.rdbtn_SetCountN.Location = new System.Drawing.Point(60, 23);
+            this.rdbtn_SetCountN.Location = new System.Drawing.Point(60, 21);
             this.rdbtn_SetCountN.Name = "rdbtn_SetCountN";
-            this.rdbtn_SetCountN.Size = new System.Drawing.Size(35, 16);
+            this.rdbtn_SetCountN.Size = new System.Drawing.Size(35, 15);
             this.rdbtn_SetCountN.TabIndex = 30;
             this.rdbtn_SetCountN.TabStop = true;
             this.rdbtn_SetCountN.Text = "否";
@@ -328,9 +328,9 @@
             // rdbtn_SetCountY
             // 
             this.rdbtn_SetCountY.AutoSize = true;
-            this.rdbtn_SetCountY.Location = new System.Drawing.Point(13, 23);
+            this.rdbtn_SetCountY.Location = new System.Drawing.Point(13, 21);
             this.rdbtn_SetCountY.Name = "rdbtn_SetCountY";
-            this.rdbtn_SetCountY.Size = new System.Drawing.Size(35, 16);
+            this.rdbtn_SetCountY.Size = new System.Drawing.Size(35, 15);
             this.rdbtn_SetCountY.TabIndex = 29;
             this.rdbtn_SetCountY.TabStop = true;
             this.rdbtn_SetCountY.Text = "是";
@@ -339,7 +339,7 @@
             // 
             // tbxCount
             // 
-            this.tbxCount.Location = new System.Drawing.Point(207, 22);
+            this.tbxCount.Location = new System.Drawing.Point(207, 20);
             this.tbxCount.Name = "tbxCount";
             this.tbxCount.Size = new System.Drawing.Size(43, 21);
             this.tbxCount.TabIndex = 28;
@@ -348,7 +348,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(112, 25);
+            this.label1.Location = new System.Drawing.Point(112, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 12);
             this.label1.TabIndex = 27;
@@ -362,9 +362,9 @@
             this.gbx_SetDay.Controls.Add(this.label2);
             this.gbx_SetDay.Controls.Add(this.dtp_EndDay);
             this.gbx_SetDay.Controls.Add(this.dtp_StartDay);
-            this.gbx_SetDay.Location = new System.Drawing.Point(528, 113);
+            this.gbx_SetDay.Location = new System.Drawing.Point(528, 104);
             this.gbx_SetDay.Name = "gbx_SetDay";
-            this.gbx_SetDay.Size = new System.Drawing.Size(285, 92);
+            this.gbx_SetDay.Size = new System.Drawing.Size(285, 85);
             this.gbx_SetDay.TabIndex = 53;
             this.gbx_SetDay.TabStop = false;
             this.gbx_SetDay.Text = "是否限定期限";
@@ -372,9 +372,9 @@
             // rdbtn_SetDayN
             // 
             this.rdbtn_SetDayN.AutoSize = true;
-            this.rdbtn_SetDayN.Location = new System.Drawing.Point(13, 59);
+            this.rdbtn_SetDayN.Location = new System.Drawing.Point(13, 54);
             this.rdbtn_SetDayN.Name = "rdbtn_SetDayN";
-            this.rdbtn_SetDayN.Size = new System.Drawing.Size(35, 16);
+            this.rdbtn_SetDayN.Size = new System.Drawing.Size(35, 15);
             this.rdbtn_SetDayN.TabIndex = 1;
             this.rdbtn_SetDayN.TabStop = true;
             this.rdbtn_SetDayN.Text = "否";
@@ -384,9 +384,9 @@
             // rdbtn_SetDayY
             // 
             this.rdbtn_SetDayY.AutoSize = true;
-            this.rdbtn_SetDayY.Location = new System.Drawing.Point(13, 25);
+            this.rdbtn_SetDayY.Location = new System.Drawing.Point(13, 23);
             this.rdbtn_SetDayY.Name = "rdbtn_SetDayY";
-            this.rdbtn_SetDayY.Size = new System.Drawing.Size(35, 16);
+            this.rdbtn_SetDayY.Size = new System.Drawing.Size(35, 15);
             this.rdbtn_SetDayY.TabIndex = 0;
             this.rdbtn_SetDayY.TabStop = true;
             this.rdbtn_SetDayY.Text = "是";
@@ -396,7 +396,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 61);
+            this.label4.Location = new System.Drawing.Point(66, 56);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 12);
             this.label4.TabIndex = 5;
@@ -405,7 +405,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 27);
+            this.label2.Location = new System.Drawing.Point(66, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 12);
             this.label2.TabIndex = 4;
@@ -413,7 +413,7 @@
             // 
             // dtp_EndDay
             // 
-            this.dtp_EndDay.Location = new System.Drawing.Point(161, 56);
+            this.dtp_EndDay.Location = new System.Drawing.Point(161, 52);
             this.dtp_EndDay.Name = "dtp_EndDay";
             this.dtp_EndDay.Size = new System.Drawing.Size(118, 21);
             this.dtp_EndDay.TabIndex = 3;
@@ -421,7 +421,7 @@
             // dtp_StartDay
             // 
             this.dtp_StartDay.CustomFormat = "yyyy-MM-dd";
-            this.dtp_StartDay.Location = new System.Drawing.Point(161, 23);
+            this.dtp_StartDay.Location = new System.Drawing.Point(161, 21);
             this.dtp_StartDay.Name = "dtp_StartDay";
             this.dtp_StartDay.Size = new System.Drawing.Size(118, 21);
             this.dtp_StartDay.TabIndex = 2;
@@ -437,9 +437,9 @@
             this.gbx_SetWeekDay.Controls.Add(this.cbx_Mon);
             this.gbx_SetWeekDay.Controls.Add(this.rdbtn_SetWeekDayN);
             this.gbx_SetWeekDay.Controls.Add(this.rdbtn_SetWeekDayY);
-            this.gbx_SetWeekDay.Location = new System.Drawing.Point(237, 113);
+            this.gbx_SetWeekDay.Location = new System.Drawing.Point(237, 104);
             this.gbx_SetWeekDay.Name = "gbx_SetWeekDay";
-            this.gbx_SetWeekDay.Size = new System.Drawing.Size(263, 92);
+            this.gbx_SetWeekDay.Size = new System.Drawing.Size(263, 85);
             this.gbx_SetWeekDay.TabIndex = 52;
             this.gbx_SetWeekDay.TabStop = false;
             this.gbx_SetWeekDay.Text = "是否限定日期";
@@ -447,9 +447,9 @@
             // cbx_Sun
             // 
             this.cbx_Sun.AutoSize = true;
-            this.cbx_Sun.Location = new System.Drawing.Point(60, 69);
+            this.cbx_Sun.Location = new System.Drawing.Point(60, 64);
             this.cbx_Sun.Name = "cbx_Sun";
-            this.cbx_Sun.Size = new System.Drawing.Size(60, 16);
+            this.cbx_Sun.Size = new System.Drawing.Size(60, 15);
             this.cbx_Sun.TabIndex = 8;
             this.cbx_Sun.Text = "星期日";
             this.cbx_Sun.UseVisualStyleBackColor = true;
@@ -457,9 +457,9 @@
             // cbx_Sat
             // 
             this.cbx_Sat.AutoSize = true;
-            this.cbx_Sat.Location = new System.Drawing.Point(192, 47);
+            this.cbx_Sat.Location = new System.Drawing.Point(192, 43);
             this.cbx_Sat.Name = "cbx_Sat";
-            this.cbx_Sat.Size = new System.Drawing.Size(60, 16);
+            this.cbx_Sat.Size = new System.Drawing.Size(60, 15);
             this.cbx_Sat.TabIndex = 7;
             this.cbx_Sat.Text = "星期六";
             this.cbx_Sat.UseVisualStyleBackColor = true;
@@ -467,9 +467,9 @@
             // cbx_Fri
             // 
             this.cbx_Fri.AutoSize = true;
-            this.cbx_Fri.Location = new System.Drawing.Point(126, 47);
+            this.cbx_Fri.Location = new System.Drawing.Point(126, 43);
             this.cbx_Fri.Name = "cbx_Fri";
-            this.cbx_Fri.Size = new System.Drawing.Size(60, 16);
+            this.cbx_Fri.Size = new System.Drawing.Size(60, 15);
             this.cbx_Fri.TabIndex = 6;
             this.cbx_Fri.Text = "星期五";
             this.cbx_Fri.UseVisualStyleBackColor = true;
@@ -477,9 +477,9 @@
             // cbx_Thu
             // 
             this.cbx_Thu.AutoSize = true;
-            this.cbx_Thu.Location = new System.Drawing.Point(60, 47);
+            this.cbx_Thu.Location = new System.Drawing.Point(60, 43);
             this.cbx_Thu.Name = "cbx_Thu";
-            this.cbx_Thu.Size = new System.Drawing.Size(60, 16);
+            this.cbx_Thu.Size = new System.Drawing.Size(60, 15);
             this.cbx_Thu.TabIndex = 5;
             this.cbx_Thu.Text = "星期四";
             this.cbx_Thu.UseVisualStyleBackColor = true;
@@ -487,9 +487,9 @@
             // cbx_Wed
             // 
             this.cbx_Wed.AutoSize = true;
-            this.cbx_Wed.Location = new System.Drawing.Point(192, 23);
+            this.cbx_Wed.Location = new System.Drawing.Point(192, 21);
             this.cbx_Wed.Name = "cbx_Wed";
-            this.cbx_Wed.Size = new System.Drawing.Size(60, 16);
+            this.cbx_Wed.Size = new System.Drawing.Size(60, 15);
             this.cbx_Wed.TabIndex = 4;
             this.cbx_Wed.Text = "星期三";
             this.cbx_Wed.UseVisualStyleBackColor = true;
@@ -497,9 +497,9 @@
             // cbx_Tue
             // 
             this.cbx_Tue.AutoSize = true;
-            this.cbx_Tue.Location = new System.Drawing.Point(126, 23);
+            this.cbx_Tue.Location = new System.Drawing.Point(126, 21);
             this.cbx_Tue.Name = "cbx_Tue";
-            this.cbx_Tue.Size = new System.Drawing.Size(60, 16);
+            this.cbx_Tue.Size = new System.Drawing.Size(60, 15);
             this.cbx_Tue.TabIndex = 3;
             this.cbx_Tue.Text = "星期二";
             this.cbx_Tue.UseVisualStyleBackColor = true;
@@ -507,9 +507,9 @@
             // cbx_Mon
             // 
             this.cbx_Mon.AutoSize = true;
-            this.cbx_Mon.Location = new System.Drawing.Point(60, 23);
+            this.cbx_Mon.Location = new System.Drawing.Point(60, 21);
             this.cbx_Mon.Name = "cbx_Mon";
-            this.cbx_Mon.Size = new System.Drawing.Size(60, 16);
+            this.cbx_Mon.Size = new System.Drawing.Size(60, 15);
             this.cbx_Mon.TabIndex = 2;
             this.cbx_Mon.Text = "星期一";
             this.cbx_Mon.UseVisualStyleBackColor = true;
@@ -517,9 +517,9 @@
             // rdbtn_SetWeekDayN
             // 
             this.rdbtn_SetWeekDayN.AutoSize = true;
-            this.rdbtn_SetWeekDayN.Location = new System.Drawing.Point(12, 46);
+            this.rdbtn_SetWeekDayN.Location = new System.Drawing.Point(12, 42);
             this.rdbtn_SetWeekDayN.Name = "rdbtn_SetWeekDayN";
-            this.rdbtn_SetWeekDayN.Size = new System.Drawing.Size(35, 16);
+            this.rdbtn_SetWeekDayN.Size = new System.Drawing.Size(35, 15);
             this.rdbtn_SetWeekDayN.TabIndex = 1;
             this.rdbtn_SetWeekDayN.TabStop = true;
             this.rdbtn_SetWeekDayN.Text = "否";
@@ -529,9 +529,9 @@
             // rdbtn_SetWeekDayY
             // 
             this.rdbtn_SetWeekDayY.AutoSize = true;
-            this.rdbtn_SetWeekDayY.Location = new System.Drawing.Point(12, 21);
+            this.rdbtn_SetWeekDayY.Location = new System.Drawing.Point(12, 19);
             this.rdbtn_SetWeekDayY.Name = "rdbtn_SetWeekDayY";
-            this.rdbtn_SetWeekDayY.Size = new System.Drawing.Size(35, 16);
+            this.rdbtn_SetWeekDayY.Size = new System.Drawing.Size(35, 15);
             this.rdbtn_SetWeekDayY.TabIndex = 0;
             this.rdbtn_SetWeekDayY.TabStop = true;
             this.rdbtn_SetWeekDayY.Text = "是";
@@ -545,9 +545,9 @@
             this.gbx_SetTime.Controls.Add(this.label5);
             this.gbx_SetTime.Controls.Add(this.dtp_TimeEnd);
             this.gbx_SetTime.Controls.Add(this.dtp_TimeStart);
-            this.gbx_SetTime.Location = new System.Drawing.Point(528, 42);
+            this.gbx_SetTime.Location = new System.Drawing.Point(528, 39);
             this.gbx_SetTime.Name = "gbx_SetTime";
-            this.gbx_SetTime.Size = new System.Drawing.Size(285, 53);
+            this.gbx_SetTime.Size = new System.Drawing.Size(285, 49);
             this.gbx_SetTime.TabIndex = 51;
             this.gbx_SetTime.TabStop = false;
             this.gbx_SetTime.Text = "是否限定时段";
@@ -555,9 +555,9 @@
             // rdbtn_SetTimeN
             // 
             this.rdbtn_SetTimeN.AutoSize = true;
-            this.rdbtn_SetTimeN.Location = new System.Drawing.Point(63, 23);
+            this.rdbtn_SetTimeN.Location = new System.Drawing.Point(63, 21);
             this.rdbtn_SetTimeN.Name = "rdbtn_SetTimeN";
-            this.rdbtn_SetTimeN.Size = new System.Drawing.Size(35, 16);
+            this.rdbtn_SetTimeN.Size = new System.Drawing.Size(35, 15);
             this.rdbtn_SetTimeN.TabIndex = 1;
             this.rdbtn_SetTimeN.TabStop = true;
             this.rdbtn_SetTimeN.Text = "否";
@@ -567,9 +567,9 @@
             // rdbtn_SetTimeY
             // 
             this.rdbtn_SetTimeY.AutoSize = true;
-            this.rdbtn_SetTimeY.Location = new System.Drawing.Point(13, 23);
+            this.rdbtn_SetTimeY.Location = new System.Drawing.Point(13, 21);
             this.rdbtn_SetTimeY.Name = "rdbtn_SetTimeY";
-            this.rdbtn_SetTimeY.Size = new System.Drawing.Size(35, 16);
+            this.rdbtn_SetTimeY.Size = new System.Drawing.Size(35, 15);
             this.rdbtn_SetTimeY.TabIndex = 0;
             this.rdbtn_SetTimeY.TabStop = true;
             this.rdbtn_SetTimeY.Text = "是";
@@ -579,7 +579,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(184, 26);
+            this.label5.Location = new System.Drawing.Point(184, 24);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(17, 12);
             this.label5.TabIndex = 33;
@@ -589,7 +589,7 @@
             // 
             this.dtp_TimeEnd.CustomFormat = "HH:mm";
             this.dtp_TimeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_TimeEnd.Location = new System.Drawing.Point(207, 20);
+            this.dtp_TimeEnd.Location = new System.Drawing.Point(207, 18);
             this.dtp_TimeEnd.Name = "dtp_TimeEnd";
             this.dtp_TimeEnd.ShowUpDown = true;
             this.dtp_TimeEnd.Size = new System.Drawing.Size(60, 21);
@@ -599,7 +599,7 @@
             // 
             this.dtp_TimeStart.CustomFormat = "HH:mm";
             this.dtp_TimeStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_TimeStart.Location = new System.Drawing.Point(118, 20);
+            this.dtp_TimeStart.Location = new System.Drawing.Point(118, 18);
             this.dtp_TimeStart.Name = "dtp_TimeStart";
             this.dtp_TimeStart.ShowUpDown = true;
             this.dtp_TimeStart.Size = new System.Drawing.Size(60, 21);
@@ -607,9 +607,9 @@
             // 
             // btn_SetDataTime
             // 
-            this.btn_SetDataTime.Location = new System.Drawing.Point(223, 468);
+            this.btn_SetDataTime.Location = new System.Drawing.Point(223, 432);
             this.btn_SetDataTime.Name = "btn_SetDataTime";
-            this.btn_SetDataTime.Size = new System.Drawing.Size(109, 41);
+            this.btn_SetDataTime.Size = new System.Drawing.Size(109, 38);
             this.btn_SetDataTime.TabIndex = 50;
             this.btn_SetDataTime.Text = "设置当前时间";
             this.btn_SetDataTime.UseVisualStyleBackColor = true;
@@ -617,9 +617,9 @@
             // 
             // btn_count
             // 
-            this.btn_count.Location = new System.Drawing.Point(519, 406);
+            this.btn_count.Location = new System.Drawing.Point(519, 375);
             this.btn_count.Name = "btn_count";
-            this.btn_count.Size = new System.Drawing.Size(107, 41);
+            this.btn_count.Size = new System.Drawing.Size(107, 38);
             this.btn_count.TabIndex = 49;
             this.btn_count.Text = "设置管理员卡";
             this.btn_count.UseVisualStyleBackColor = true;
@@ -627,9 +627,9 @@
             // 
             // btn_check
             // 
-            this.btn_check.Location = new System.Drawing.Point(65, 406);
+            this.btn_check.Location = new System.Drawing.Point(65, 375);
             this.btn_check.Name = "btn_check";
-            this.btn_check.Size = new System.Drawing.Size(107, 41);
+            this.btn_check.Size = new System.Drawing.Size(107, 38);
             this.btn_check.TabIndex = 48;
             this.btn_check.Text = "连接设备";
             this.btn_check.UseVisualStyleBackColor = true;
@@ -638,9 +638,9 @@
             // btn_oldIC_clear
             // 
             this.btn_oldIC_clear.Enabled = false;
-            this.btn_oldIC_clear.Location = new System.Drawing.Point(314, 267);
+            this.btn_oldIC_clear.Location = new System.Drawing.Point(314, 246);
             this.btn_oldIC_clear.Name = "btn_oldIC_clear";
-            this.btn_oldIC_clear.Size = new System.Drawing.Size(109, 41);
+            this.btn_oldIC_clear.Size = new System.Drawing.Size(109, 38);
             this.btn_oldIC_clear.TabIndex = 47;
             this.btn_oldIC_clear.Text = "擦除卡片数据";
             this.btn_oldIC_clear.UseVisualStyleBackColor = true;
@@ -651,9 +651,9 @@
             // 
             this.btn_newICw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_newICw.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.btn_newICw.Location = new System.Drawing.Point(671, 406);
+            this.btn_newICw.Location = new System.Drawing.Point(671, 375);
             this.btn_newICw.Name = "btn_newICw";
-            this.btn_newICw.Size = new System.Drawing.Size(109, 41);
+            this.btn_newICw.Size = new System.Drawing.Size(109, 38);
             this.btn_newICw.TabIndex = 46;
             this.btn_newICw.Text = "空白卡加密";
             this.btn_newICw.UseVisualStyleBackColor = true;
@@ -661,9 +661,9 @@
             // 
             // btn_write
             // 
-            this.btn_write.Location = new System.Drawing.Point(223, 406);
+            this.btn_write.Location = new System.Drawing.Point(223, 375);
             this.btn_write.Name = "btn_write";
-            this.btn_write.Size = new System.Drawing.Size(253, 41);
+            this.btn_write.Size = new System.Drawing.Size(253, 38);
             this.btn_write.TabIndex = 45;
             this.btn_write.Text = "写卡";
             this.btn_write.UseVisualStyleBackColor = true;
@@ -672,7 +672,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(414, 93);
+            this.label3.Location = new System.Drawing.Point(414, 86);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 12);
@@ -690,21 +690,21 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 52);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(835, 530);
+            this.tabPage2.Size = new System.Drawing.Size(835, 485);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "已发卡数据";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(25, 13);
+            this.textBox4.Location = new System.Drawing.Point(25, 12);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(216, 21);
             this.textBox4.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(564, 13);
+            this.textBox3.Location = new System.Drawing.Point(564, 12);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(69, 21);
             this.textBox3.TabIndex = 4;
@@ -714,7 +714,7 @@
             // 
             this.btn_import.Location = new System.Drawing.Point(258, 6);
             this.btn_import.Name = "btn_import";
-            this.btn_import.Size = new System.Drawing.Size(94, 33);
+            this.btn_import.Size = new System.Drawing.Size(94, 30);
             this.btn_import.TabIndex = 3;
             this.btn_import.Text = "导入数据库";
             this.btn_import.UseVisualStyleBackColor = true;
@@ -724,7 +724,7 @@
             // 
             this.btn_export.Location = new System.Drawing.Point(358, 6);
             this.btn_export.Name = "btn_export";
-            this.btn_export.Size = new System.Drawing.Size(100, 33);
+            this.btn_export.Size = new System.Drawing.Size(100, 30);
             this.btn_export.TabIndex = 2;
             this.btn_export.Text = "导出数据库";
             this.btn_export.UseVisualStyleBackColor = true;
@@ -734,7 +734,7 @@
             // 
             this.btn_clr.Location = new System.Drawing.Point(464, 6);
             this.btn_clr.Name = "btn_clr";
-            this.btn_clr.Size = new System.Drawing.Size(94, 33);
+            this.btn_clr.Size = new System.Drawing.Size(94, 30);
             this.btn_clr.TabIndex = 1;
             this.btn_clr.Text = "清空数据库";
             this.btn_clr.UseVisualStyleBackColor = true;
@@ -745,11 +745,11 @@
             this.dgv_IcData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_IcData.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgv_IcData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_IcData.Location = new System.Drawing.Point(25, 58);
+            this.dgv_IcData.Location = new System.Drawing.Point(25, 54);
             this.dgv_IcData.Name = "dgv_IcData";
             this.dgv_IcData.RowTemplate.Height = 23;
             this.dgv_IcData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_IcData.Size = new System.Drawing.Size(784, 466);
+            this.dgv_IcData.Size = new System.Drawing.Size(784, 430);
             this.dgv_IcData.TabIndex = 0;
             this.dgv_IcData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_IcData_CellContentDoubleClick);
             // 
@@ -760,7 +760,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 52);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(835, 530);
+            this.tabPage3.Size = new System.Drawing.Size(835, 485);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "主板统计";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -770,11 +770,11 @@
             this.dgv_mb_data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_mb_data.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgv_mb_data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_mb_data.Location = new System.Drawing.Point(23, 58);
+            this.dgv_mb_data.Location = new System.Drawing.Point(23, 54);
             this.dgv_mb_data.Name = "dgv_mb_data";
             this.dgv_mb_data.RowTemplate.Height = 23;
             this.dgv_mb_data.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_mb_data.Size = new System.Drawing.Size(787, 466);
+            this.dgv_mb_data.Size = new System.Drawing.Size(787, 430);
             this.dgv_mb_data.TabIndex = 1;
             this.dgv_mb_data.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_mb_data_CellContentDoubleClick);
             // 
@@ -782,7 +782,7 @@
             // 
             this.sts.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sts_lable});
-            this.sts.Location = new System.Drawing.Point(0, 591);
+            this.sts.Location = new System.Drawing.Point(0, 544);
             this.sts.Name = "sts";
             this.sts.Size = new System.Drawing.Size(843, 22);
             this.sts.TabIndex = 41;
@@ -791,7 +791,7 @@
             // sts_lable
             // 
             this.sts_lable.Name = "sts_lable";
-            this.sts_lable.Size = new System.Drawing.Size(118, 17);
+            this.sts_lable.Size = new System.Drawing.Size(131, 17);
             this.sts_lable.Text = "toolStripStatusLabel1";
             // 
             // timer1
@@ -801,9 +801,10 @@
             // 
             // MainFrom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(843, 613);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(843, 566);
             this.Controls.Add(this.sts);
             this.Controls.Add(this.tbc_Fun);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

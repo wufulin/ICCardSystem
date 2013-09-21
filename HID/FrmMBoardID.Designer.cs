@@ -1,6 +1,6 @@
 ﻿namespace HID
 {
-    partial class FrmMBoard_ID
+    partial class FrmMBoardID
     {
         /// <summary>
         /// Required designer variable.
@@ -110,7 +110,7 @@
             this.Controls.Add(this.lbe_mb_id);
             this.Controls.Add(this.btn_add_mbid);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "FrmMBoard_ID";
+            this.Name = "FrmMBoardID";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "主板信息采集";
             this.ResumeLayout(false);

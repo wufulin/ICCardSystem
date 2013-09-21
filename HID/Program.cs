@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace HID
@@ -15,8 +13,6 @@ namespace HID
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-            //Application.Run(new FrmLogin());
             Form frm1 = new MainFrom();
             Application.Run(frm1);
         }
