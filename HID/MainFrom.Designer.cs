@@ -318,7 +318,7 @@
             this.rdbtn_SetCountN.AutoSize = true;
             this.rdbtn_SetCountN.Location = new System.Drawing.Point(60, 21);
             this.rdbtn_SetCountN.Name = "rdbtn_SetCountN";
-            this.rdbtn_SetCountN.Size = new System.Drawing.Size(35, 15);
+            this.rdbtn_SetCountN.Size = new System.Drawing.Size(35, 16);
             this.rdbtn_SetCountN.TabIndex = 30;
             this.rdbtn_SetCountN.TabStop = true;
             this.rdbtn_SetCountN.Text = "否";
@@ -330,7 +330,7 @@
             this.rdbtn_SetCountY.AutoSize = true;
             this.rdbtn_SetCountY.Location = new System.Drawing.Point(13, 21);
             this.rdbtn_SetCountY.Name = "rdbtn_SetCountY";
-            this.rdbtn_SetCountY.Size = new System.Drawing.Size(35, 15);
+            this.rdbtn_SetCountY.Size = new System.Drawing.Size(35, 16);
             this.rdbtn_SetCountY.TabIndex = 29;
             this.rdbtn_SetCountY.TabStop = true;
             this.rdbtn_SetCountY.Text = "是";
@@ -374,7 +374,7 @@
             this.rdbtn_SetDayN.AutoSize = true;
             this.rdbtn_SetDayN.Location = new System.Drawing.Point(13, 54);
             this.rdbtn_SetDayN.Name = "rdbtn_SetDayN";
-            this.rdbtn_SetDayN.Size = new System.Drawing.Size(35, 15);
+            this.rdbtn_SetDayN.Size = new System.Drawing.Size(35, 16);
             this.rdbtn_SetDayN.TabIndex = 1;
             this.rdbtn_SetDayN.TabStop = true;
             this.rdbtn_SetDayN.Text = "否";
@@ -386,7 +386,7 @@
             this.rdbtn_SetDayY.AutoSize = true;
             this.rdbtn_SetDayY.Location = new System.Drawing.Point(13, 23);
             this.rdbtn_SetDayY.Name = "rdbtn_SetDayY";
-            this.rdbtn_SetDayY.Size = new System.Drawing.Size(35, 15);
+            this.rdbtn_SetDayY.Size = new System.Drawing.Size(35, 16);
             this.rdbtn_SetDayY.TabIndex = 0;
             this.rdbtn_SetDayY.TabStop = true;
             this.rdbtn_SetDayY.Text = "是";
@@ -449,7 +449,7 @@
             this.cbx_Sun.AutoSize = true;
             this.cbx_Sun.Location = new System.Drawing.Point(60, 64);
             this.cbx_Sun.Name = "cbx_Sun";
-            this.cbx_Sun.Size = new System.Drawing.Size(60, 15);
+            this.cbx_Sun.Size = new System.Drawing.Size(60, 16);
             this.cbx_Sun.TabIndex = 8;
             this.cbx_Sun.Text = "星期日";
             this.cbx_Sun.UseVisualStyleBackColor = true;
@@ -459,7 +459,7 @@
             this.cbx_Sat.AutoSize = true;
             this.cbx_Sat.Location = new System.Drawing.Point(192, 43);
             this.cbx_Sat.Name = "cbx_Sat";
-            this.cbx_Sat.Size = new System.Drawing.Size(60, 15);
+            this.cbx_Sat.Size = new System.Drawing.Size(60, 16);
             this.cbx_Sat.TabIndex = 7;
             this.cbx_Sat.Text = "星期六";
             this.cbx_Sat.UseVisualStyleBackColor = true;
@@ -469,7 +469,7 @@
             this.cbx_Fri.AutoSize = true;
             this.cbx_Fri.Location = new System.Drawing.Point(126, 43);
             this.cbx_Fri.Name = "cbx_Fri";
-            this.cbx_Fri.Size = new System.Drawing.Size(60, 15);
+            this.cbx_Fri.Size = new System.Drawing.Size(60, 16);
             this.cbx_Fri.TabIndex = 6;
             this.cbx_Fri.Text = "星期五";
             this.cbx_Fri.UseVisualStyleBackColor = true;
@@ -479,7 +479,7 @@
             this.cbx_Thu.AutoSize = true;
             this.cbx_Thu.Location = new System.Drawing.Point(60, 43);
             this.cbx_Thu.Name = "cbx_Thu";
-            this.cbx_Thu.Size = new System.Drawing.Size(60, 15);
+            this.cbx_Thu.Size = new System.Drawing.Size(60, 16);
             this.cbx_Thu.TabIndex = 5;
             this.cbx_Thu.Text = "星期四";
             this.cbx_Thu.UseVisualStyleBackColor = true;
@@ -489,7 +489,7 @@
             this.cbx_Wed.AutoSize = true;
             this.cbx_Wed.Location = new System.Drawing.Point(192, 21);
             this.cbx_Wed.Name = "cbx_Wed";
-            this.cbx_Wed.Size = new System.Drawing.Size(60, 15);
+            this.cbx_Wed.Size = new System.Drawing.Size(60, 16);
             this.cbx_Wed.TabIndex = 4;
             this.cbx_Wed.Text = "星期三";
             this.cbx_Wed.UseVisualStyleBackColor = true;
@@ -499,7 +499,7 @@
             this.cbx_Tue.AutoSize = true;
             this.cbx_Tue.Location = new System.Drawing.Point(126, 21);
             this.cbx_Tue.Name = "cbx_Tue";
-            this.cbx_Tue.Size = new System.Drawing.Size(60, 15);
+            this.cbx_Tue.Size = new System.Drawing.Size(60, 16);
             this.cbx_Tue.TabIndex = 3;
             this.cbx_Tue.Text = "星期二";
             this.cbx_Tue.UseVisualStyleBackColor = true;
@@ -509,7 +509,7 @@
             this.cbx_Mon.AutoSize = true;
             this.cbx_Mon.Location = new System.Drawing.Point(60, 21);
             this.cbx_Mon.Name = "cbx_Mon";
-            this.cbx_Mon.Size = new System.Drawing.Size(60, 15);
+            this.cbx_Mon.Size = new System.Drawing.Size(60, 16);
             this.cbx_Mon.TabIndex = 2;
             this.cbx_Mon.Text = "星期一";
             this.cbx_Mon.UseVisualStyleBackColor = true;
@@ -519,7 +519,7 @@
             this.rdbtn_SetWeekDayN.AutoSize = true;
             this.rdbtn_SetWeekDayN.Location = new System.Drawing.Point(12, 42);
             this.rdbtn_SetWeekDayN.Name = "rdbtn_SetWeekDayN";
-            this.rdbtn_SetWeekDayN.Size = new System.Drawing.Size(35, 15);
+            this.rdbtn_SetWeekDayN.Size = new System.Drawing.Size(35, 16);
             this.rdbtn_SetWeekDayN.TabIndex = 1;
             this.rdbtn_SetWeekDayN.TabStop = true;
             this.rdbtn_SetWeekDayN.Text = "否";
@@ -531,7 +531,7 @@
             this.rdbtn_SetWeekDayY.AutoSize = true;
             this.rdbtn_SetWeekDayY.Location = new System.Drawing.Point(12, 19);
             this.rdbtn_SetWeekDayY.Name = "rdbtn_SetWeekDayY";
-            this.rdbtn_SetWeekDayY.Size = new System.Drawing.Size(35, 15);
+            this.rdbtn_SetWeekDayY.Size = new System.Drawing.Size(35, 16);
             this.rdbtn_SetWeekDayY.TabIndex = 0;
             this.rdbtn_SetWeekDayY.TabStop = true;
             this.rdbtn_SetWeekDayY.Text = "是";
@@ -557,7 +557,7 @@
             this.rdbtn_SetTimeN.AutoSize = true;
             this.rdbtn_SetTimeN.Location = new System.Drawing.Point(63, 21);
             this.rdbtn_SetTimeN.Name = "rdbtn_SetTimeN";
-            this.rdbtn_SetTimeN.Size = new System.Drawing.Size(35, 15);
+            this.rdbtn_SetTimeN.Size = new System.Drawing.Size(35, 16);
             this.rdbtn_SetTimeN.TabIndex = 1;
             this.rdbtn_SetTimeN.TabStop = true;
             this.rdbtn_SetTimeN.Text = "否";
@@ -569,7 +569,7 @@
             this.rdbtn_SetTimeY.AutoSize = true;
             this.rdbtn_SetTimeY.Location = new System.Drawing.Point(13, 21);
             this.rdbtn_SetTimeY.Name = "rdbtn_SetTimeY";
-            this.rdbtn_SetTimeY.Size = new System.Drawing.Size(35, 15);
+            this.rdbtn_SetTimeY.Size = new System.Drawing.Size(35, 16);
             this.rdbtn_SetTimeY.TabIndex = 0;
             this.rdbtn_SetTimeY.TabStop = true;
             this.rdbtn_SetTimeY.Text = "是";
@@ -742,16 +742,22 @@
             // 
             // dgv_IcData
             // 
+            this.dgv_IcData.AllowUserToAddRows = false;
+            this.dgv_IcData.AllowUserToDeleteRows = false;
             this.dgv_IcData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_IcData.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgv_IcData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_IcData.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgv_IcData.Location = new System.Drawing.Point(25, 54);
+            this.dgv_IcData.MultiSelect = false;
             this.dgv_IcData.Name = "dgv_IcData";
+            this.dgv_IcData.ReadOnly = true;
+            this.dgv_IcData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_IcData.RowTemplate.Height = 23;
             this.dgv_IcData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_IcData.Size = new System.Drawing.Size(784, 430);
             this.dgv_IcData.TabIndex = 0;
-            this.dgv_IcData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_IcData_CellContentDoubleClick);
+            this.dgv_IcData.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_IcData_CellMouseDoubleClick);
             // 
             // tabPage3
             // 
@@ -767,16 +773,20 @@
             // 
             // dgv_mb_data
             // 
+            this.dgv_mb_data.AllowUserToAddRows = false;
+            this.dgv_mb_data.AllowUserToDeleteRows = false;
             this.dgv_mb_data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_mb_data.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgv_mb_data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_mb_data.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgv_mb_data.Location = new System.Drawing.Point(23, 54);
             this.dgv_mb_data.Name = "dgv_mb_data";
+            this.dgv_mb_data.ReadOnly = true;
             this.dgv_mb_data.RowTemplate.Height = 23;
             this.dgv_mb_data.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_mb_data.Size = new System.Drawing.Size(787, 430);
             this.dgv_mb_data.TabIndex = 1;
-            this.dgv_mb_data.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_mb_data_CellContentDoubleClick);
+            this.dgv_mb_data.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_mb_data_CellMouseDoubleClick);
             // 
             // sts
             // 
@@ -809,7 +819,7 @@
             this.Controls.Add(this.tbc_Fun);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainFrom";
-            this.Text = "佛山恒新电子有限公司 IC卡系统软件 V2.31";
+            this.Text = "佛山恒新电子有限公司 IC卡系统软件 V2.4.1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainFrom_FormClosed);
             this.tbc_Fun.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

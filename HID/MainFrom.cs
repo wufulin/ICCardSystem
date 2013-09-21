@@ -849,24 +849,6 @@ namespace HID
             }
         }
 
-        private void dgv_IcData_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //MessageBox.Show(dgv_IcData.SelectedRows[0].Cells["IC_ID"].Value.ToString());
-            //strIC_ID = dgv_IcData.SelectedRows[0].Cells["IC_ID"].Value.ToString();
-            FrmICDataShow FrmData = new FrmICDataShow(this);
-            string tstr= dgv_IcData.SelectedRows[0].Cells["IC_ID"].Value.ToString();
-            //FrmData.IC_ID = Convert.ToInt32(tstr.Substring(0, 3)).ToString("X") + " " +
-            //                Convert.ToInt32(tstr.Substring(3, 3)).ToString("X") + " " +
-            //                Convert.ToInt32(tstr.Substring(6, 3)).ToString("X") + " " +
-            //                Convert.ToInt32(tstr.Substring(9, 3)).ToString("X") ;
-            //FrmData.IC_ID = tstr.Substring(0, 2) + " " +
-            //                tstr.Substring(2, 2) + " " +
-            //                tstr.Substring(4, 2) + " " +
-            //                tstr.Substring(6, 2);
-            FrmData.IC_ID = tstr;
-            FrmData.Show();
-        }
-
         private void tbc_Fun_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -1170,6 +1152,29 @@ namespace HID
         {
             // 关闭窗体时，关闭数据库连接
             DBHelper.closeCon();
+        }
+
+        private void dgv_IcData_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            //MessageBox.Show(dgv_IcData.SelectedRows[0].Cells["IC_ID"].Value.ToString());
+            //strIC_ID = dgv_IcData.SelectedRows[0].Cells["IC_ID"].Value.ToString();
+            FrmICDataShow FrmData = new FrmICDataShow(this);
+            string tstr = dgv_IcData.SelectedRows[0].Cells["IC_ID"].Value.ToString();
+            //FrmData.IC_ID = Convert.ToInt32(tstr.Substring(0, 3)).ToString("X") + " " +
+            //                Convert.ToInt32(tstr.Substring(3, 3)).ToString("X") + " " +
+            //                Convert.ToInt32(tstr.Substring(6, 3)).ToString("X") + " " +
+            //                Convert.ToInt32(tstr.Substring(9, 3)).ToString("X") ;
+            //FrmData.IC_ID = tstr.Substring(0, 2) + " " +
+            //                tstr.Substring(2, 2) + " " +
+            //                tstr.Substring(4, 2) + " " +
+            //                tstr.Substring(6, 2);
+            FrmData.IC_ID = tstr;
+            FrmData.Show();
+        }
+
+        private void dgv_mb_data_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
         }
 
         //public string IC_ID
