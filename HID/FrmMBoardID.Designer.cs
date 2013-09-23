@@ -96,7 +96,7 @@
             this.tbx_Company.Size = new System.Drawing.Size(144, 21);
             this.tbx_Company.TabIndex = 9;
             // 
-            // FrmMBoard_ID
+            // FrmMBoardID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -113,6 +113,7 @@
             this.Name = "FrmMBoardID";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "主板信息采集";
+            this.Load += new System.EventHandler(this.FrmMBoardID_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

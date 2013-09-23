@@ -1177,11 +1177,29 @@ namespace HID
 
         }
 
+        private void tbxCarNum_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            FrmSelectMBoardID FrmSMBoardID = new FrmSelectMBoardID(this);
+            FrmSMBoardID.Show();
+        }
+
+        private void dgv_IcData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gbx_basic_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         //public string IC_ID
         //{
         //    get { return strIC_ID; }
         //    set { strIC_ID = value; }
         //}
 
+
+        public string text { get; set; }
     }
 }

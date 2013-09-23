@@ -208,6 +208,7 @@
             this.gbx_basic.TabIndex = 58;
             this.gbx_basic.TabStop = false;
             this.gbx_basic.Text = "基本信息";
+            this.gbx_basic.Enter += new System.EventHandler(this.gbx_basic_Enter);
             // 
             // tbxIcNum
             // 
@@ -231,6 +232,7 @@
             this.tbxCarNum.Name = "tbxCarNum";
             this.tbxCarNum.Size = new System.Drawing.Size(87, 21);
             this.tbxCarNum.TabIndex = 61;
+            this.tbxCarNum.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbxCarNum_MouseDoubleClick);
             // 
             // label7
             // 
@@ -757,6 +759,7 @@
             this.dgv_IcData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_IcData.Size = new System.Drawing.Size(784, 430);
             this.dgv_IcData.TabIndex = 0;
+            this.dgv_IcData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_IcData_CellContentClick);
             this.dgv_IcData.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_IcData_CellMouseDoubleClick);
             // 
             // tabPage3

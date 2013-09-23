@@ -12,8 +12,7 @@ namespace HID
         public FrmMBoardID()
         {
             InitializeComponent();
-            lbe_mb_id.Text = @"852741963";
-            tbx_mb_num.Text = MBoard_ID;
+            
         }
 
         public string MBoard_ID
@@ -48,6 +47,12 @@ namespace HID
                 }
             }
 
+        }
+
+        private void FrmMBoardID_Load(object sender, EventArgs e)
+        {
+            lbe_mb_id.Text = MBoard_ID;
+            tbx_mb_num.Text = MBoard_ID;
         }
     }
 }

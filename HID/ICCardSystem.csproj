@@ -81,6 +81,12 @@
     <Compile Include="Common\DBOperation.cs" />
     <Compile Include="Common\DataBase.cs" />
     <Compile Include="Common\DBHelper.cs" />
+    <Compile Include="FrmSelectMBoardID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectMBoardID.Designer.cs">
+      <DependentUpon>FrmSelectMBoardID.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\cIC_Card_Data.cs" />
     <Compile Include="Model\MainBoard.cs" />
     <Compile Include="FrmDetector.cs">
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMBoardID.resx">
       <DependentUpon>FrmMBoardID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectMBoardID.resx">
+      <DependentUpon>FrmSelectMBoardID.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFrom.resx">
       <DependentUpon>MainFrom.cs</DependentUpon>
