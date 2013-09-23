@@ -1200,6 +1200,10 @@ namespace HID
         //}
 
 
-        public string text { get; set; }
+        public string LiftSystemNumber
+        {
+            get { return this.tbxCarNum.Text; }
+            set { this.tbxCarNum.Text = value; }
+        }
     }
 }
