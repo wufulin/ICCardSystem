@@ -530,7 +530,7 @@ namespace HID
                     WriteBuffer[3] |= 0x08;
                 }
 
-                //  判断是否 把主板ID号直接写到卡里...
+                //  判断是否 把主板ID号直接写到卡里...  comboBox1
                 if (comboBox1.SelectedIndex == -1)
                 {
                     WriteBuffer[32 + 3] = 0;    //   Block_10[0]
@@ -566,6 +566,40 @@ namespace HID
                     //tbxIcNum.Text =BitConverter.ToString(buf_byte);
                     tbxIcNum.Text = comboBox1.Text.Substring(0, 2);
                     tbxCarNum.Text = (Int32.Parse(comboBox1.Text.Substring(0, 2), NumberStyles.HexNumber)).ToString("X2");
+                }
+
+                //  判断是否 把主板ID号直接写到卡里...  tbxCarNum.Text
+                if (mainboard == null)
+                {
+                    WriteBuffer[32 + 3] = 0;    //   Block_10[0]
+                }
+                else
+                {
+                    byte[] buf_byte = Encoding.Default.GetBytes(mainboard.Id.ToString());
+
+                    WriteBuffer[32 + 3] = 1;    //   Block_10[0]
+
+                    //WriteBuffer[33 + 3] = (byte)(Convert.ToUInt32(comboBox1.Text.Substring(0, 2)));    //   Block_10[1]
+                    WriteBuffer[33 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(12, 2), NumberStyles.HexNumber);    //   Block_10[1]
+                    WriteBuffer[34 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(15, 2), NumberStyles.HexNumber);    //   Block_10[2]
+                    WriteBuffer[35 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(18, 2), NumberStyles.HexNumber);    //   Block_10[3]
+                    WriteBuffer[36 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(21, 2), NumberStyles.HexNumber);    //   Block_10[4]
+
+                    WriteBuffer[37 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(24, 2), NumberStyles.HexNumber);    //   Block_10[5]
+                    WriteBuffer[38 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(27, 2), NumberStyles.HexNumber);    //   Block_10[6]
+                    WriteBuffer[39 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(30, 2), NumberStyles.HexNumber);    //   Block_10[7]
+                    WriteBuffer[40 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(33, 2), NumberStyles.HexNumber);    //   Block_10[8]
+
+                    WriteBuffer[41 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(0, 2), NumberStyles.HexNumber);    //   Block_10[9]
+                    WriteBuffer[42 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(3, 2), NumberStyles.HexNumber);    //   Block_10[10]
+                    WriteBuffer[43 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(6, 2), NumberStyles.HexNumber);    //   Block_10[11]
+                    WriteBuffer[44 + 3] = (byte)Int32.Parse(mainboard.Id.Substring(9, 2), NumberStyles.HexNumber);    //   Block_10[12]
+
+                    //tbxIcNum.Text = Encoding.Default.GetString(buf_byte);
+                    //tbxIcNum.Text = buf_byte[0].ToString("X2");
+                    //tbxIcNum.Text =BitConverter.ToString(buf_byte);
+                    //tbxIcNum.Text = comboBox1.Text.Substring(0, 2);
+                    //tbxCarNum.Text = (Int32.Parse(comboBox1.Text.Substring(0, 2), NumberStyles.HexNumber)).ToString("X2");
                 }
                 #endregion
                 //*********************************************************************
@@ -1199,11 +1233,30 @@ namespace HID
         //    set { strIC_ID = value; }
         //}
 
+        private MainBoard _mainBoard;
+        public MainBoard mainboard
+        {
+            get { return this._mainBoard; }
+            set {this._mainBoard =value;}
+        }
+
 
         public string LiftSystemNumber
         {
             get { return this.tbxCarNum.Text; }
             set { this.tbxCarNum.Text = value; }
+        }
+
+        private string _bmsg;
+        public string bmsg
+        {
+            get { return _bmsg; }
+            set { _bmsg = value; }
+        }
+
+        private void tbxCarNum_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

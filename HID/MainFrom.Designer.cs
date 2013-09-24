@@ -232,6 +232,7 @@
             this.tbxCarNum.Name = "tbxCarNum";
             this.tbxCarNum.Size = new System.Drawing.Size(87, 21);
             this.tbxCarNum.TabIndex = 61;
+            this.tbxCarNum.TextChanged += new System.EventHandler(this.tbxCarNum_TextChanged);
             this.tbxCarNum.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbxCarNum_MouseDoubleClick);
             // 
             // label7
@@ -239,9 +240,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 63);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 12);
+            this.label7.Size = new System.Drawing.Size(65, 12);
             this.label7.TabIndex = 60;
-            this.label7.Text = "电梯系统号：";
+            this.label7.Text = "选择电梯：";
             // 
             // tbxName
             // 

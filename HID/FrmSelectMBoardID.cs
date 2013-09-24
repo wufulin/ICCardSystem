@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using HID.BaseClass;
+using HID.Model;
 
 namespace HID
 {
@@ -25,7 +26,20 @@ namespace HID
         private void dgv_mb_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             label1.Text = dgv_mb.SelectedRows[0].Cells["MainBoard_ID"].Value.ToString();
-            parent.LiftSystemNumber = label1.Text;
+            parent.bmsg = dgv_mb.SelectedRows[0].Cells["单位名称"].Value.ToString();
+            parent.LiftSystemNumber = parent.bmsg;
+
+            MainBoard mb_temp = new MainBoard();
+            mb_temp.Id = dgv_mb.SelectedRows[0].Cells["MainBoard_ID"].Value.ToString();
+            mb_temp.Number=dgv_mb.SelectedRows[0].Cells["MainBoard_Num"].Value.ToString();
+            mb_temp.CompanyName=dgv_mb.SelectedRows[0].Cells["单位名称"].Value.ToString();
+            parent.mainboard = mb_temp;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            parent.LiftSystemNumber = "";
+            parent.mainboard = null;
         }
     }
 }

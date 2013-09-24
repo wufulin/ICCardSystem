@@ -23,27 +23,34 @@ namespace HID
 
         private void btn_add_mbid_Click(object sender, EventArgs e)
         {
-            DBOperation bf = new DBOperation();
-            MainBoard mb_data = new MainBoard(this.MBoard_ID, tbx_mb_num.Text, tbx_Company.Text);
-
-            if (bf.Find_MainBoard_Data(mb_data) == 1)
+            if (tbx_mb_num.Text == "" || tbx_Company.Text == "")
             {
-                bf.Updata_MainBoard_Data(mb_data);
-                //textBox1.Text += "\r\n access_db have data\r\n!";
-                //if (bf.Updata_IcData(ic_data) == 1)
-                //    textBox1.Text += "\r\n access_db have up data ok\r\n!";
-                //else
-                //    textBox1.Text += "\r\n access_db updata error\r\n!";
+                MessageBox.Show("主板号 和 备注信息 不能为空!");
             }
             else
             {
-                if (bf.Add_MainBoard_Data(mb_data) == 1)
+                DBOperation bf = new DBOperation();
+                MainBoard mb_data = new MainBoard(this.MBoard_ID, tbx_mb_num.Text, tbx_Company.Text);
+
+                if (bf.Find_MainBoard_Data(mb_data) == 1)
                 {
-                    MessageBox.Show("add main board id ok!");
+                    bf.Updata_MainBoard_Data(mb_data);
+                    //textBox1.Text += "\r\n access_db have data\r\n!";
+                    //if (bf.Updata_IcData(ic_data) == 1)
+                    //    textBox1.Text += "\r\n access_db have up data ok\r\n!";
+                    //else
+                    //    textBox1.Text += "\r\n access_db updata error\r\n!";
                 }
                 else
                 {
-                    MessageBox.Show("add main board id error !");
+                    if (bf.Add_MainBoard_Data(mb_data) == 1)
+                    {
+                        MessageBox.Show("add main board id ok!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("add main board id error !");
+                    }
                 }
             }
 
