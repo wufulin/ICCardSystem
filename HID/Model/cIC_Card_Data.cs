@@ -12,11 +12,18 @@
         private int _ic_num;
         private string _持卡人 = "";
         private string _电梯ID = "";
+        private string _备注 = "";
         private byte[] block_8 = new byte[16];
         private byte[] block_9 = new byte[16];
         private byte[] block_10 = new byte[16];
         //private byte[] block_9;
         //private byte[] block_10;
+
+        public string 备注
+        {
+            get { return _备注; }
+            set { _备注 = value; }
+        }
 
         public string 持卡人
         {

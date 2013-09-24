@@ -129,17 +129,14 @@ namespace HID
             {
                 //BaseInfo bf = new BaseInfo();
                 cIC_Card_Data ic_data = new cIC_Card_Data();
+
                 ic_data.IC_ID = str_id;
-                //ic_data.IC_Fun = "";
-                //ic_data.Floor_Data = "";
-                //ic_data.IC_FunA = "";
-                ////ic_data.Add_ID = "";
 
                 if (tbxIcNum.Text!="")
                 {
                     if (!int.TryParse((tbxIcNum.Text), out num))
                     {
-                        MessageBox.Show("请输入卡号！");
+                        MessageBox.Show("请输入卡号！ 卡号必须是数字！");
                     }
                     else
                     {
@@ -147,9 +144,14 @@ namespace HID
                     }
                 }
 
+                // _ic_num 为 IC卡的ID的 十进制表示
+                int _ic_num = (e.Packet[51] + e.Packet[52] * 256 + e.Packet[53] * 256 * 256 + e.Packet[54] * 256 * 256 * 256);
+                ic_data.ic_num = _ic_num;
+                tbxIcNum.Text = _ic_num.ToString();   //  显示IC卡卡号，即IC卡的ID的 十进制表示
+
                 ic_data.持卡人 = tbxName.Text;
                 ic_data.电梯ID = tbxCarNum.Text;
-                
+                ic_data.备注 = tbxIC_bz.Text;
 
                 for (i = 0; i < 16; i++)
                 {
@@ -177,15 +179,8 @@ namespace HID
                     //bf.Add_IcData(ic_data);
                 }
 
-                //if (bf.Add_IcData(ic_data) == 1)
-                //{
-                //    //MessageBox.Show("add access_db ok!");
-                //    textBox1.Text += "add access_db ok!";
-                //}
-                //else
-                //    MessageBox.Show("add access_db error!");
             }
-            else if (e.Packet[1] == 0xB5)
+            else if (e.Packet[1] == 0xB5)    //  读卡回应
             {
                 //BaseInfo bf = new BaseInfo();
                 cIC_Card_Data ic_data = new cIC_Card_Data();

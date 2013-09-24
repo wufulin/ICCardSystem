@@ -55,15 +55,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(203, 26);
+            this.label1.Location = new System.Drawing.Point(189, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 12);
+            this.label1.Size = new System.Drawing.Size(0, 12);
             this.label1.TabIndex = 3;
-            this.label1.Text = "11";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(329, 12);
+            this.button1.Location = new System.Drawing.Point(348, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(72, 27);
             this.button1.TabIndex = 4;
@@ -90,6 +89,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_mb);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmSelectMBoardID";
             this.Text = "FrmSelectMBoardID";
             this.Load += new System.EventHandler(this.FrmSelectMBoardID_Load);

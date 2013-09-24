@@ -18,7 +18,7 @@ namespace HID.BaseClass
             {
                 oledCon = DBHelper.getCon();
                 oledCon.Open();
-                string strAdd = "insert into tb_ICCard_Data (IC_ID,写卡时间,Block_8,Block_9,Block_10,卡号,持卡人,电梯ID)";
+                string strAdd = "insert into tb_ICCard_Data (IC_ID,写卡时间,Block_8,Block_9,Block_10,卡号,持卡人,备注，电梯ID)";
                 //string strAdd = "insert into tb_ICCard_Data (IC_ID,写卡时间,Block_8,Block_9,Block_10)";
                 strAdd += "values('" + icData.IC_ID + "','" + DateTime.Now.ToString() + "','" + 
                     BitConverter.ToString(icData.Block_8) + "','" + 
@@ -26,6 +26,7 @@ namespace HID.BaseClass
                     BitConverter.ToString(icData.Block_10) + "','" +
                     icData.ic_num+"','" +
                     icData.持卡人+"','" +
+                    icData.备注 + "','" +
                     icData.电梯ID+"')" 
                     ;
                 //strAdd += "values('" + icData.IC_ID + "','" + icData.IC_Fun + "',";

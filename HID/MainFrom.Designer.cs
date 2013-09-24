@@ -93,6 +93,14 @@
             this.sts = new System.Windows.Forms.StatusStrip();
             this.sts_lable = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label10 = new System.Windows.Forms.Label();
+            this.tbxIC_bz = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.tbc_Fun.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gbx_basic.SuspendLayout();
@@ -196,6 +204,8 @@
             // 
             // gbx_basic
             // 
+            this.gbx_basic.Controls.Add(this.tbxIC_bz);
+            this.gbx_basic.Controls.Add(this.label10);
             this.gbx_basic.Controls.Add(this.tbxIcNum);
             this.gbx_basic.Controls.Add(this.label8);
             this.gbx_basic.Controls.Add(this.tbxCarNum);
@@ -212,9 +222,9 @@
             // 
             // tbxIcNum
             // 
-            this.tbxIcNum.Location = new System.Drawing.Point(94, 91);
+            this.tbxIcNum.Location = new System.Drawing.Point(77, 91);
             this.tbxIcNum.Name = "tbxIcNum";
-            this.tbxIcNum.Size = new System.Drawing.Size(87, 21);
+            this.tbxIcNum.Size = new System.Drawing.Size(104, 21);
             this.tbxIcNum.TabIndex = 63;
             // 
             // label8
@@ -228,9 +238,9 @@
             // 
             // tbxCarNum
             // 
-            this.tbxCarNum.Location = new System.Drawing.Point(94, 60);
+            this.tbxCarNum.Location = new System.Drawing.Point(77, 60);
             this.tbxCarNum.Name = "tbxCarNum";
-            this.tbxCarNum.Size = new System.Drawing.Size(87, 21);
+            this.tbxCarNum.Size = new System.Drawing.Size(104, 21);
             this.tbxCarNum.TabIndex = 61;
             this.tbxCarNum.TextChanged += new System.EventHandler(this.tbxCarNum_TextChanged);
             this.tbxCarNum.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbxCarNum_MouseDoubleClick);
@@ -246,9 +256,9 @@
             // 
             // tbxName
             // 
-            this.tbxName.Location = new System.Drawing.Point(94, 24);
+            this.tbxName.Location = new System.Drawing.Point(77, 24);
             this.tbxName.Name = "tbxName";
-            this.tbxName.Size = new System.Drawing.Size(87, 21);
+            this.tbxName.Size = new System.Drawing.Size(104, 21);
             this.tbxName.TabIndex = 59;
             // 
             // label6
@@ -256,21 +266,20 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 29);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 12);
+            this.label6.Size = new System.Drawing.Size(53, 12);
             this.label6.TabIndex = 59;
-            this.label6.Text = "业主姓名：";
+            this.label6.Text = "持卡人：";
             // 
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(591, 194);
+            this.textBox1.Location = new System.Drawing.Point(617, 194);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(178, 135);
             this.textBox1.TabIndex = 42;
-            this.textBox1.Visible = false;
             // 
             // btn_ReSet
             // 
@@ -683,6 +692,12 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label14);
+            this.tabPage2.Controls.Add(this.textBox6);
+            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Controls.Add(this.textBox4);
             this.tabPage2.Controls.Add(this.textBox3);
             this.tabPage2.Controls.Add(this.btn_import);
@@ -700,14 +715,14 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(25, 12);
+            this.textBox4.Location = new System.Drawing.Point(722, 12);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(216, 21);
+            this.textBox4.Size = new System.Drawing.Size(78, 21);
             this.textBox4.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(564, 12);
+            this.textBox3.Location = new System.Drawing.Point(509, 12);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(69, 21);
             this.textBox3.TabIndex = 4;
@@ -715,7 +730,7 @@
             // 
             // btn_import
             // 
-            this.btn_import.Location = new System.Drawing.Point(258, 6);
+            this.btn_import.Location = new System.Drawing.Point(25, 21);
             this.btn_import.Name = "btn_import";
             this.btn_import.Size = new System.Drawing.Size(94, 30);
             this.btn_import.TabIndex = 3;
@@ -725,7 +740,7 @@
             // 
             // btn_export
             // 
-            this.btn_export.Location = new System.Drawing.Point(358, 6);
+            this.btn_export.Location = new System.Drawing.Point(145, 21);
             this.btn_export.Name = "btn_export";
             this.btn_export.Size = new System.Drawing.Size(100, 30);
             this.btn_export.TabIndex = 2;
@@ -735,7 +750,7 @@
             // 
             // btn_clr
             // 
-            this.btn_clr.Location = new System.Drawing.Point(464, 6);
+            this.btn_clr.Location = new System.Drawing.Point(270, 21);
             this.btn_clr.Name = "btn_clr";
             this.btn_clr.Size = new System.Drawing.Size(94, 30);
             this.btn_clr.TabIndex = 1;
@@ -751,14 +766,14 @@
             this.dgv_IcData.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgv_IcData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_IcData.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgv_IcData.Location = new System.Drawing.Point(25, 54);
+            this.dgv_IcData.Location = new System.Drawing.Point(25, 81);
             this.dgv_IcData.MultiSelect = false;
             this.dgv_IcData.Name = "dgv_IcData";
             this.dgv_IcData.ReadOnly = true;
             this.dgv_IcData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_IcData.RowTemplate.Height = 23;
             this.dgv_IcData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_IcData.Size = new System.Drawing.Size(784, 430);
+            this.dgv_IcData.Size = new System.Drawing.Size(784, 403);
             this.dgv_IcData.TabIndex = 0;
             this.dgv_IcData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_IcData_CellContentClick);
             this.dgv_IcData.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_IcData_CellMouseDoubleClick);
@@ -812,6 +827,72 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 128);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 12);
+            this.label10.TabIndex = 64;
+            this.label10.Text = "IC卡备注：";
+            // 
+            // tbxIC_bz
+            // 
+            this.tbxIC_bz.Location = new System.Drawing.Point(78, 121);
+            this.tbxIC_bz.Name = "tbxIC_bz";
+            this.tbxIC_bz.Size = new System.Drawing.Size(103, 21);
+            this.tbxIC_bz.TabIndex = 65;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(398, 21);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(89, 12);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "选择卡号过滤：";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(615, 18);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(89, 12);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "选择电梯过滤：";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(398, 49);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(101, 12);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "选择持卡人过滤：";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(509, 46);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(69, 21);
+            this.textBox5.TabIndex = 9;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(722, 46);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(78, 21);
+            this.textBox6.TabIndex = 10;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(615, 49);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(89, 12);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "选择备注过滤：";
             // 
             // MainFrom
             // 
@@ -916,5 +997,13 @@
         private System.Windows.Forms.Button btn_import;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbxIC_bz;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label13;
     }
 }

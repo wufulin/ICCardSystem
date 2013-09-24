@@ -25,7 +25,6 @@ namespace HID
 
         private void dgv_mb_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            label1.Text = dgv_mb.SelectedRows[0].Cells["MainBoard_ID"].Value.ToString();
             parent.bmsg = dgv_mb.SelectedRows[0].Cells["单位名称"].Value.ToString();
             parent.LiftSystemNumber = parent.bmsg;
 
@@ -33,6 +32,7 @@ namespace HID
             mb_temp.Id = dgv_mb.SelectedRows[0].Cells["MainBoard_ID"].Value.ToString();
             mb_temp.Number=dgv_mb.SelectedRows[0].Cells["MainBoard_Num"].Value.ToString();
             mb_temp.CompanyName=dgv_mb.SelectedRows[0].Cells["单位名称"].Value.ToString();
+            label1.Text = mb_temp.Number;
             parent.mainboard = mb_temp;
         }
 
@@ -40,6 +40,7 @@ namespace HID
         {
             parent.LiftSystemNumber = "";
             parent.mainboard = null;
+            label1.Text = "没有选择电梯。";
         }
     }
 }
