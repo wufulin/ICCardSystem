@@ -36,6 +36,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btn_SetBoard = new System.Windows.Forms.Button();
             this.gbx_basic = new System.Windows.Forms.GroupBox();
+            this.tbxIC_bz = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.tbxIcNum = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tbxCarNum = new System.Windows.Forms.TextBox();
@@ -82,6 +84,12 @@
             this.btn_write = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.btn_import = new System.Windows.Forms.Button();
@@ -93,14 +101,6 @@
             this.sts = new System.Windows.Forms.StatusStrip();
             this.sts_lable = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label10 = new System.Windows.Forms.Label();
-            this.tbxIC_bz = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.tbc_Fun.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gbx_basic.SuspendLayout();
@@ -125,7 +125,7 @@
             this.tbc_Fun.Location = new System.Drawing.Point(0, 0);
             this.tbc_Fun.Name = "tbc_Fun";
             this.tbc_Fun.SelectedIndex = 0;
-            this.tbc_Fun.Size = new System.Drawing.Size(843, 541);
+            this.tbc_Fun.Size = new System.Drawing.Size(1059, 541);
             this.tbc_Fun.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tbc_Fun.TabIndex = 0;
             this.tbc_Fun.SelectedIndexChanged += new System.EventHandler(this.tbc_Fun_SelectedIndexChanged);
@@ -156,7 +156,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 52);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(835, 485);
+            this.tabPage1.Size = new System.Drawing.Size(1051, 485);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "发卡";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -220,6 +220,22 @@
             this.gbx_basic.Text = "基本信息";
             this.gbx_basic.Enter += new System.EventHandler(this.gbx_basic_Enter);
             // 
+            // tbxIC_bz
+            // 
+            this.tbxIC_bz.Location = new System.Drawing.Point(78, 121);
+            this.tbxIC_bz.Name = "tbxIC_bz";
+            this.tbxIC_bz.Size = new System.Drawing.Size(103, 21);
+            this.tbxIC_bz.TabIndex = 65;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 128);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 12);
+            this.label10.TabIndex = 64;
+            this.label10.Text = "IC卡备注：";
+            // 
             // tbxIcNum
             // 
             this.tbxIcNum.Location = new System.Drawing.Point(77, 91);
@@ -272,8 +288,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(617, 194);
+            this.textBox1.Location = new System.Drawing.Point(830, 49);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -713,6 +728,56 @@
             this.tabPage2.Text = "已发卡数据";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(615, 49);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(89, 12);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "选择备注过滤：";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(722, 46);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(78, 21);
+            this.textBox6.TabIndex = 10;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(509, 46);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(69, 21);
+            this.textBox5.TabIndex = 9;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(398, 49);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(101, 12);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "选择持卡人过滤：";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(615, 18);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(89, 12);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "选择电梯过滤：";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(398, 21);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(89, 12);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "选择卡号过滤：";
+            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(722, 12);
@@ -813,7 +878,7 @@
             this.sts_lable});
             this.sts.Location = new System.Drawing.Point(0, 544);
             this.sts.Name = "sts";
-            this.sts.Size = new System.Drawing.Size(843, 22);
+            this.sts.Size = new System.Drawing.Size(1125, 22);
             this.sts.TabIndex = 41;
             this.sts.Text = "statusStrip1";
             // 
@@ -828,78 +893,12 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 128);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 12);
-            this.label10.TabIndex = 64;
-            this.label10.Text = "IC卡备注：";
-            // 
-            // tbxIC_bz
-            // 
-            this.tbxIC_bz.Location = new System.Drawing.Point(78, 121);
-            this.tbxIC_bz.Name = "tbxIC_bz";
-            this.tbxIC_bz.Size = new System.Drawing.Size(103, 21);
-            this.tbxIC_bz.TabIndex = 65;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(398, 21);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(89, 12);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "选择卡号过滤：";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(615, 18);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 12);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "选择电梯过滤：";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(398, 49);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(101, 12);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "选择持卡人过滤：";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(509, 46);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(69, 21);
-            this.textBox5.TabIndex = 9;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(722, 46);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(78, 21);
-            this.textBox6.TabIndex = 10;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(615, 49);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 12);
-            this.label14.TabIndex = 11;
-            this.label14.Text = "选择备注过滤：";
-            // 
             // MainFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(843, 566);
+            this.ClientSize = new System.Drawing.Size(1125, 566);
             this.Controls.Add(this.sts);
             this.Controls.Add(this.tbc_Fun);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
