@@ -27,6 +27,11 @@ namespace HID.BaseClass
                 oledbcon = new OleDbConnection(strDataSource);
             }
 
+            if (oledbcon.State != ConnectionState.Open)
+            {
+                oledbcon.Open();
+            }
+
             return oledbcon;
         }
 
@@ -51,7 +56,7 @@ namespace HID.BaseClass
             int intFalg = 0;
             try
             {
-                getCon().Open();
+                getCon();
                 OleDbCommand oledbCom = new OleDbCommand(strCon, getCon());
                 if (oledbCom.ExecuteNonQuery() != 0)
                 {

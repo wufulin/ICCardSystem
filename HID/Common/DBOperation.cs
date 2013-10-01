@@ -17,28 +17,15 @@ namespace HID.BaseClass
             try
             {
                 oledCon = DBHelper.getCon();
-                oledCon.Open();
 
-                string strAdd = "insert into tb_ICCard_Data (IC_ID,写卡时间,Block_8,Block_9,Block_10,卡号,持卡人,电梯ID)";  //
+                string strAdd = "insert into tb_ICCard_Data (IC_ID,写卡时间,Block_8,Block_9,Block_10,卡号,电梯ID,持卡人)";  //
                 strAdd += " values('" + icData.IC_ID + "','" + DateTime.Now.ToString() + "','" +
                     BitConverter.ToString(icData.Block_8) + "','" +
                     BitConverter.ToString(icData.Block_9) + "','" +
                     BitConverter.ToString(icData.Block_10) + "','" +
                     icData.ic_num + "','" +
-                    icData.持卡人 + "','" +
-                    //icData.备注 + "','" +
-                    icData.电梯ID + "')";
-                    //;
-
-                //string strAdd = "insert into tb_ICCard_Data (IC_ID,写卡时间,Block_8,Block_9,Block_10,卡号,持卡人,电梯ID)";
-                //strAdd += " values('" + icData.IC_ID + "','" + DateTime.Now.ToString() + "','" +
-                //    BitConverter.ToString(icData.Block_8) + "','" +
-                //    BitConverter.ToString(icData.Block_9) + "','" +
-                //    BitConverter.ToString(icData.Block_10) + "','" +
-                //    icData.ic_num + "','" +
-                //    icData.持卡人 + "','" +
-                //    icData.电梯ID + "')"
-                //    ;
+                    icData.电梯ID + "','" +
+                    icData.持卡人 + "')";
 
                 OleDbCommand oledCmd = new OleDbCommand(strAdd, oledCon);
                 if (oledCmd.ExecuteNonQuery() != 0)
@@ -61,15 +48,14 @@ namespace HID.BaseClass
             try
             {
                 oledCon = DBHelper.getCon();
-                oledCon.Open();
                 string strAdd = "update tb_ICCard_Data ";
                 strAdd +=   "set 写卡时间='" + DateTime.Now.ToString()+"'," +
                             "Block_8='" + BitConverter.ToString(icData.Block_8) + "'," +
                             "Block_9='" + BitConverter.ToString(icData.Block_9) + "'," +
                             "Block_10='" + BitConverter.ToString(icData.Block_10) + "'," +
                             "卡号='" + icData.ic_num + "'," +
-                            "持卡人='" + icData.持卡人 + "'," +
-                            "电梯ID='" + icData.电梯ID + "'" +
+                            "电梯ID='" + icData. 电梯ID+ "'," +
+                            "持卡人='" + icData.持卡人 + "'" +
                             "where IC_ID='"+ icData.IC_ID+"'" ;
  
                 OleDbCommand oledCmd = new OleDbCommand(strAdd, oledCon);
@@ -117,7 +103,6 @@ namespace HID.BaseClass
             try
             {
                 oledCon = DBHelper.getCon();
-                oledCon.Open();
                 string strcmd = "delete from tb_ICCard_Data where IC_ID='" + icData.IC_ID+"'" ;
 
                 OleDbCommand oledCmd = new OleDbCommand(strcmd, oledCon);
@@ -141,7 +126,6 @@ namespace HID.BaseClass
             try
             {
                 oledCon = DBHelper.getCon();
-                oledCon.Open();
                 string strAdd = "insert into tb_MainBoard (MainBoard_ID,MainBoard_Num,单位名称)";
                 strAdd += "values('" + mbData.Id + "','" + mbData.Number + "','" +
                     mbData.CompanyName + "')";
@@ -167,7 +151,6 @@ namespace HID.BaseClass
             try
             {
                 oledCon = DBHelper.getCon();
-                oledCon.Open();
                 string strAdd = "update tb_MainBoard ";
                 strAdd += "set MainBoard_Num='" + mbData.Number+ "'" + "set 单位名称='" + 
                     mbData.CompanyName + "'" + "where MainBoard_ID='" + mbData.Id + "'";
@@ -193,7 +176,6 @@ namespace HID.BaseClass
             try
             {
                 //oledCon = data.getCon();
-                //oledCon.Open();
                 string strcmd = "select * from tb_MainBoard where MainBoard_ID='" + mbData.Id + "'";
 
                 DataBase data = new DataBase();//创建DataBase类的对象
@@ -220,7 +202,6 @@ namespace HID.BaseClass
             try
             {
                 oledCon = DBHelper.getCon();
-                oledCon.Open();
                 string strcmd = "delete from tb_MainBoard where MainBoard_ID='" + mbData.Id + "'";
 
                 OleDbCommand oledCmd = new OleDbCommand(strcmd, oledCon);

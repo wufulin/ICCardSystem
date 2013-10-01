@@ -1147,7 +1147,14 @@ namespace HID
             {
                 string sql = "delete from tb_ICCard_Data";
                 int flag = DBHelper.executeCommand(sql);
-                MessageBox.Show("删除数据库数据成功", "删除数据库数据", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (flag == 1)
+                {
+                    MessageBox.Show("删除数据库数据成功", "删除数据库数据", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("删除数据库数据失败", "删除数据库数据", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
 
                 DataSet ds = DBHelper.getDs("select * from tb_ICCard_Data", "tb_Data");
 
