@@ -101,6 +101,21 @@
             this.sts = new System.Windows.Forms.StatusStrip();
             this.sts_lable = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.cbx_sq_4 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_5 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_6 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_7 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_8 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_9 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_10 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_11 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_12 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_13 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_14 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_15 = new System.Windows.Forms.CheckBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tbc_Fun.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gbx_basic.SuspendLayout();
@@ -122,16 +137,31 @@
             this.tbc_Fun.Controls.Add(this.tabPage3);
             this.tbc_Fun.Font = new System.Drawing.Font("SimSun", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tbc_Fun.ItemSize = new System.Drawing.Size(160, 48);
-            this.tbc_Fun.Location = new System.Drawing.Point(0, 0);
+            this.tbc_Fun.Location = new System.Drawing.Point(0, -3);
             this.tbc_Fun.Name = "tbc_Fun";
             this.tbc_Fun.SelectedIndex = 0;
-            this.tbc_Fun.Size = new System.Drawing.Size(1059, 541);
+            this.tbc_Fun.Size = new System.Drawing.Size(852, 558);
             this.tbc_Fun.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tbc_Fun.TabIndex = 0;
             this.tbc_Fun.SelectedIndexChanged += new System.EventHandler(this.tbc_Fun_SelectedIndexChanged);
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.label15);
+            this.tabPage1.Controls.Add(this.cbx_sq_15);
+            this.tabPage1.Controls.Add(this.cbx_sq_14);
+            this.tabPage1.Controls.Add(this.cbx_sq_13);
+            this.tabPage1.Controls.Add(this.cbx_sq_12);
+            this.tabPage1.Controls.Add(this.cbx_sq_11);
+            this.tabPage1.Controls.Add(this.cbx_sq_10);
+            this.tabPage1.Controls.Add(this.cbx_sq_9);
+            this.tabPage1.Controls.Add(this.cbx_sq_8);
+            this.tabPage1.Controls.Add(this.cbx_sq_7);
+            this.tabPage1.Controls.Add(this.cbx_sq_6);
+            this.tabPage1.Controls.Add(this.cbx_sq_5);
+            this.tabPage1.Controls.Add(this.cbx_sq_4);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.comboBox1);
@@ -156,7 +186,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 52);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1051, 485);
+            this.tabPage1.Size = new System.Drawing.Size(844, 502);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "发卡";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -184,7 +214,7 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(29, 326);
+            this.comboBox1.Location = new System.Drawing.Point(42, 220);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(447, 20);
             this.comboBox1.TabIndex = 61;
@@ -194,7 +224,7 @@
             // 
             // btn_SetBoard
             // 
-            this.btn_SetBoard.Location = new System.Drawing.Point(671, 432);
+            this.btn_SetBoard.Location = new System.Drawing.Point(671, 447);
             this.btn_SetBoard.Name = "btn_SetBoard";
             this.btn_SetBoard.Size = new System.Drawing.Size(109, 38);
             this.btn_SetBoard.TabIndex = 59;
@@ -288,17 +318,19 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(830, 49);
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(551, 194);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(178, 135);
             this.textBox1.TabIndex = 42;
+            this.textBox1.Visible = false;
             // 
             // btn_ReSet
             // 
-            this.btn_ReSet.Location = new System.Drawing.Point(519, 432);
+            this.btn_ReSet.Location = new System.Drawing.Point(519, 447);
             this.btn_ReSet.Name = "btn_ReSet";
             this.btn_ReSet.Size = new System.Drawing.Size(107, 38);
             this.btn_ReSet.TabIndex = 57;
@@ -308,7 +340,7 @@
             // 
             // btn_set_bl
             // 
-            this.btn_set_bl.Location = new System.Drawing.Point(368, 432);
+            this.btn_set_bl.Location = new System.Drawing.Point(368, 447);
             this.btn_set_bl.Name = "btn_set_bl";
             this.btn_set_bl.Size = new System.Drawing.Size(108, 38);
             this.btn_set_bl.TabIndex = 56;
@@ -318,7 +350,7 @@
             // 
             // btn_read
             // 
-            this.btn_read.Location = new System.Drawing.Point(65, 432);
+            this.btn_read.Location = new System.Drawing.Point(65, 447);
             this.btn_read.Name = "btn_read";
             this.btn_read.Size = new System.Drawing.Size(107, 38);
             this.btn_read.TabIndex = 55;
@@ -634,7 +666,7 @@
             // 
             // btn_SetDataTime
             // 
-            this.btn_SetDataTime.Location = new System.Drawing.Point(223, 432);
+            this.btn_SetDataTime.Location = new System.Drawing.Point(223, 447);
             this.btn_SetDataTime.Name = "btn_SetDataTime";
             this.btn_SetDataTime.Size = new System.Drawing.Size(109, 38);
             this.btn_SetDataTime.TabIndex = 50;
@@ -644,7 +676,7 @@
             // 
             // btn_count
             // 
-            this.btn_count.Location = new System.Drawing.Point(519, 375);
+            this.btn_count.Location = new System.Drawing.Point(519, 396);
             this.btn_count.Name = "btn_count";
             this.btn_count.Size = new System.Drawing.Size(107, 38);
             this.btn_count.TabIndex = 49;
@@ -654,7 +686,7 @@
             // 
             // btn_check
             // 
-            this.btn_check.Location = new System.Drawing.Point(65, 375);
+            this.btn_check.Location = new System.Drawing.Point(65, 396);
             this.btn_check.Name = "btn_check";
             this.btn_check.Size = new System.Drawing.Size(107, 38);
             this.btn_check.TabIndex = 48;
@@ -678,7 +710,7 @@
             // 
             this.btn_newICw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_newICw.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.btn_newICw.Location = new System.Drawing.Point(671, 375);
+            this.btn_newICw.Location = new System.Drawing.Point(671, 396);
             this.btn_newICw.Name = "btn_newICw";
             this.btn_newICw.Size = new System.Drawing.Size(109, 38);
             this.btn_newICw.TabIndex = 46;
@@ -688,7 +720,7 @@
             // 
             // btn_write
             // 
-            this.btn_write.Location = new System.Drawing.Point(223, 375);
+            this.btn_write.Location = new System.Drawing.Point(223, 396);
             this.btn_write.Name = "btn_write";
             this.btn_write.Size = new System.Drawing.Size(253, 38);
             this.btn_write.TabIndex = 45;
@@ -723,7 +755,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 52);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(835, 485);
+            this.tabPage2.Size = new System.Drawing.Size(1051, 485);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "已发卡数据";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -850,7 +882,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 52);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(835, 485);
+            this.tabPage3.Size = new System.Drawing.Size(1051, 485);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "主板统计";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -876,9 +908,9 @@
             // 
             this.sts.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sts_lable});
-            this.sts.Location = new System.Drawing.Point(0, 544);
+            this.sts.Location = new System.Drawing.Point(0, 558);
             this.sts.Name = "sts";
-            this.sts.Size = new System.Drawing.Size(1125, 22);
+            this.sts.Size = new System.Drawing.Size(852, 22);
             this.sts.TabIndex = 41;
             this.sts.Text = "statusStrip1";
             // 
@@ -893,12 +925,159 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // cbx_sq_4
+            // 
+            this.cbx_sq_4.AutoSize = true;
+            this.cbx_sq_4.Location = new System.Drawing.Point(48, 371);
+            this.cbx_sq_4.Name = "cbx_sq_4";
+            this.cbx_sq_4.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_4.TabIndex = 66;
+            this.cbx_sq_4.Text = "扇区4";
+            this.cbx_sq_4.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_5
+            // 
+            this.cbx_sq_5.AutoSize = true;
+            this.cbx_sq_5.Location = new System.Drawing.Point(109, 371);
+            this.cbx_sq_5.Name = "cbx_sq_5";
+            this.cbx_sq_5.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_5.TabIndex = 67;
+            this.cbx_sq_5.Text = "扇区5";
+            this.cbx_sq_5.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_6
+            // 
+            this.cbx_sq_6.AutoSize = true;
+            this.cbx_sq_6.Location = new System.Drawing.Point(170, 371);
+            this.cbx_sq_6.Name = "cbx_sq_6";
+            this.cbx_sq_6.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_6.TabIndex = 68;
+            this.cbx_sq_6.Text = "扇区6";
+            this.cbx_sq_6.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_7
+            // 
+            this.cbx_sq_7.AutoSize = true;
+            this.cbx_sq_7.Location = new System.Drawing.Point(231, 371);
+            this.cbx_sq_7.Name = "cbx_sq_7";
+            this.cbx_sq_7.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_7.TabIndex = 69;
+            this.cbx_sq_7.Text = "扇区7";
+            this.cbx_sq_7.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_8
+            // 
+            this.cbx_sq_8.AutoSize = true;
+            this.cbx_sq_8.Location = new System.Drawing.Point(292, 371);
+            this.cbx_sq_8.Name = "cbx_sq_8";
+            this.cbx_sq_8.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_8.TabIndex = 70;
+            this.cbx_sq_8.Text = "扇区8";
+            this.cbx_sq_8.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_9
+            // 
+            this.cbx_sq_9.AutoSize = true;
+            this.cbx_sq_9.Location = new System.Drawing.Point(353, 371);
+            this.cbx_sq_9.Name = "cbx_sq_9";
+            this.cbx_sq_9.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_9.TabIndex = 71;
+            this.cbx_sq_9.Text = "扇区9";
+            this.cbx_sq_9.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_10
+            // 
+            this.cbx_sq_10.AutoSize = true;
+            this.cbx_sq_10.Location = new System.Drawing.Point(414, 371);
+            this.cbx_sq_10.Name = "cbx_sq_10";
+            this.cbx_sq_10.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_10.TabIndex = 72;
+            this.cbx_sq_10.Text = "扇区10";
+            this.cbx_sq_10.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_11
+            // 
+            this.cbx_sq_11.AutoSize = true;
+            this.cbx_sq_11.Location = new System.Drawing.Point(481, 371);
+            this.cbx_sq_11.Name = "cbx_sq_11";
+            this.cbx_sq_11.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_11.TabIndex = 73;
+            this.cbx_sq_11.Text = "扇区11";
+            this.cbx_sq_11.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_12
+            // 
+            this.cbx_sq_12.AutoSize = true;
+            this.cbx_sq_12.Location = new System.Drawing.Point(548, 371);
+            this.cbx_sq_12.Name = "cbx_sq_12";
+            this.cbx_sq_12.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_12.TabIndex = 74;
+            this.cbx_sq_12.Text = "扇区12";
+            this.cbx_sq_12.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_13
+            // 
+            this.cbx_sq_13.AutoSize = true;
+            this.cbx_sq_13.Location = new System.Drawing.Point(615, 371);
+            this.cbx_sq_13.Name = "cbx_sq_13";
+            this.cbx_sq_13.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_13.TabIndex = 75;
+            this.cbx_sq_13.Text = "扇区13";
+            this.cbx_sq_13.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_14
+            // 
+            this.cbx_sq_14.AutoSize = true;
+            this.cbx_sq_14.Location = new System.Drawing.Point(682, 371);
+            this.cbx_sq_14.Name = "cbx_sq_14";
+            this.cbx_sq_14.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_14.TabIndex = 76;
+            this.cbx_sq_14.Text = "扇区14";
+            this.cbx_sq_14.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_15
+            // 
+            this.cbx_sq_15.AutoSize = true;
+            this.cbx_sq_15.Location = new System.Drawing.Point(749, 371);
+            this.cbx_sq_15.Name = "cbx_sq_15";
+            this.cbx_sq_15.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_15.TabIndex = 77;
+            this.cbx_sq_15.Text = "扇区15";
+            this.cbx_sq_15.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(19, 348);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(113, 12);
+            this.label15.TabIndex = 78;
+            this.label15.Text = "选择要加密的扇区：";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(147, 344);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 19);
+            this.button1.TabIndex = 79;
+            this.button1.Text = "全选";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(237, 344);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(71, 19);
+            this.button2.TabIndex = 80;
+            this.button2.Text = "清空";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // MainFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1125, 566);
+            this.ClientSize = new System.Drawing.Size(852, 580);
             this.Controls.Add(this.sts);
             this.Controls.Add(this.tbc_Fun);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1004,5 +1183,20 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.CheckBox cbx_sq_4;
+        private System.Windows.Forms.CheckBox cbx_sq_15;
+        private System.Windows.Forms.CheckBox cbx_sq_14;
+        private System.Windows.Forms.CheckBox cbx_sq_13;
+        private System.Windows.Forms.CheckBox cbx_sq_12;
+        private System.Windows.Forms.CheckBox cbx_sq_11;
+        private System.Windows.Forms.CheckBox cbx_sq_10;
+        private System.Windows.Forms.CheckBox cbx_sq_9;
+        private System.Windows.Forms.CheckBox cbx_sq_8;
+        private System.Windows.Forms.CheckBox cbx_sq_7;
+        private System.Windows.Forms.CheckBox cbx_sq_6;
+        private System.Windows.Forms.CheckBox cbx_sq_5;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
