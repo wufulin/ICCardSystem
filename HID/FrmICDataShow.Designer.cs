@@ -56,7 +56,7 @@
             // 
             // btn_deleteRecord
             // 
-            this.btn_deleteRecord.Location = new System.Drawing.Point(436, 26);
+            this.btn_deleteRecord.Location = new System.Drawing.Point(417, 233);
             this.btn_deleteRecord.Name = "btn_deleteRecord";
             this.btn_deleteRecord.Size = new System.Drawing.Size(89, 30);
             this.btn_deleteRecord.TabIndex = 0;
@@ -66,7 +66,7 @@
             // 
             // btn_exit
             // 
-            this.btn_exit.Location = new System.Drawing.Point(587, 26);
+            this.btn_exit.Location = new System.Drawing.Point(561, 234);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(89, 29);
             this.btn_exit.TabIndex = 1;
@@ -94,7 +94,7 @@
             this.gbx_data.Controls.Add(this.label2);
             this.gbx_data.Controls.Add(this.label_IC_ID);
             this.gbx_data.Controls.Add(this.label1);
-            this.gbx_data.Location = new System.Drawing.Point(12, 89);
+            this.gbx_data.Location = new System.Drawing.Point(12, 12);
             this.gbx_data.Name = "gbx_data";
             this.gbx_data.Size = new System.Drawing.Size(690, 213);
             this.gbx_data.TabIndex = 2;
@@ -266,7 +266,7 @@
             // 
             // btn_SetBlack
             // 
-            this.btn_SetBlack.Location = new System.Drawing.Point(63, 25);
+            this.btn_SetBlack.Location = new System.Drawing.Point(55, 234);
             this.btn_SetBlack.Name = "btn_SetBlack";
             this.btn_SetBlack.Size = new System.Drawing.Size(108, 29);
             this.btn_SetBlack.TabIndex = 3;
@@ -276,9 +276,9 @@
             // 
             // btn_reuse
             // 
-            this.btn_reuse.Location = new System.Drawing.Point(242, 24);
+            this.btn_reuse.Location = new System.Drawing.Point(223, 234);
             this.btn_reuse.Name = "btn_reuse";
-            this.btn_reuse.Size = new System.Drawing.Size(133, 30);
+            this.btn_reuse.Size = new System.Drawing.Size(133, 29);
             this.btn_reuse.TabIndex = 4;
             this.btn_reuse.Text = "黑名单卡 复原";
             this.btn_reuse.UseVisualStyleBackColor = true;
@@ -289,7 +289,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(714, 348);
+            this.ClientSize = new System.Drawing.Size(714, 275);
             this.Controls.Add(this.btn_reuse);
             this.Controls.Add(this.btn_SetBlack);
             this.Controls.Add(this.gbx_data);

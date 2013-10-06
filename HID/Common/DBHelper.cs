@@ -84,5 +84,20 @@ namespace HID.BaseClass
             oledbda.Fill(ds, tbname);
             return ds;
         }
+
+        /// <summary>
+        /// 根据SqlCommand，获取数据集
+        /// </summary>
+        /// <param name="selectCommand">SqlCommand</param>
+        /// <param name="tbname">表名</param>
+        /// <returns>查询数据集</returns>
+        public static DataSet getDs(OleDbCommand selectCommand, string tbname)
+        {
+            selectCommand.Connection = getCon();
+            OleDbDataAdapter oledbda = new OleDbDataAdapter(selectCommand);
+            DataSet ds = new DataSet();
+            oledbda.Fill(ds, tbname);
+            return ds;
+        }
     }
 }

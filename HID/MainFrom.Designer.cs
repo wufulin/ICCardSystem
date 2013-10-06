@@ -31,6 +31,21 @@
             this.components = new System.ComponentModel.Container();
             this.tbc_Fun = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cbx_sq_15 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_14 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_13 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_12 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_11 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_10 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_9 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_8 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_7 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_6 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_5 = new System.Windows.Forms.CheckBox();
+            this.cbx_sq_4 = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -85,13 +100,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.btn_import = new System.Windows.Forms.Button();
             this.btn_export = new System.Windows.Forms.Button();
             this.btn_clr = new System.Windows.Forms.Button();
@@ -101,21 +112,10 @@
             this.sts = new System.Windows.Forms.StatusStrip();
             this.sts_lable = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.cbx_sq_4 = new System.Windows.Forms.CheckBox();
-            this.cbx_sq_5 = new System.Windows.Forms.CheckBox();
-            this.cbx_sq_6 = new System.Windows.Forms.CheckBox();
-            this.cbx_sq_7 = new System.Windows.Forms.CheckBox();
-            this.cbx_sq_8 = new System.Windows.Forms.CheckBox();
-            this.cbx_sq_9 = new System.Windows.Forms.CheckBox();
-            this.cbx_sq_10 = new System.Windows.Forms.CheckBox();
-            this.cbx_sq_11 = new System.Windows.Forms.CheckBox();
-            this.cbx_sq_12 = new System.Windows.Forms.CheckBox();
-            this.cbx_sq_13 = new System.Windows.Forms.CheckBox();
-            this.cbx_sq_14 = new System.Windows.Forms.CheckBox();
-            this.cbx_sq_15 = new System.Windows.Forms.CheckBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cmbCardNumber = new System.Windows.Forms.ComboBox();
+            this.cmbLiftNumber = new System.Windows.Forms.ComboBox();
+            this.cmbCardOwner = new System.Windows.Forms.ComboBox();
+            this.cmbCardNote = new System.Windows.Forms.ComboBox();
             this.tbc_Fun.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gbx_basic.SuspendLayout();
@@ -190,6 +190,153 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "发卡";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(237, 344);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(71, 21);
+            this.button2.TabIndex = 80;
+            this.button2.Text = "清空";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(147, 344);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 21);
+            this.button1.TabIndex = 79;
+            this.button1.Text = "全选";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(19, 348);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(113, 12);
+            this.label15.TabIndex = 78;
+            this.label15.Text = "选择要加密的扇区：";
+            // 
+            // cbx_sq_15
+            // 
+            this.cbx_sq_15.AutoSize = true;
+            this.cbx_sq_15.Location = new System.Drawing.Point(749, 371);
+            this.cbx_sq_15.Name = "cbx_sq_15";
+            this.cbx_sq_15.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_15.TabIndex = 77;
+            this.cbx_sq_15.Text = "扇区15";
+            this.cbx_sq_15.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_14
+            // 
+            this.cbx_sq_14.AutoSize = true;
+            this.cbx_sq_14.Location = new System.Drawing.Point(682, 371);
+            this.cbx_sq_14.Name = "cbx_sq_14";
+            this.cbx_sq_14.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_14.TabIndex = 76;
+            this.cbx_sq_14.Text = "扇区14";
+            this.cbx_sq_14.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_13
+            // 
+            this.cbx_sq_13.AutoSize = true;
+            this.cbx_sq_13.Location = new System.Drawing.Point(615, 371);
+            this.cbx_sq_13.Name = "cbx_sq_13";
+            this.cbx_sq_13.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_13.TabIndex = 75;
+            this.cbx_sq_13.Text = "扇区13";
+            this.cbx_sq_13.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_12
+            // 
+            this.cbx_sq_12.AutoSize = true;
+            this.cbx_sq_12.Location = new System.Drawing.Point(548, 371);
+            this.cbx_sq_12.Name = "cbx_sq_12";
+            this.cbx_sq_12.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_12.TabIndex = 74;
+            this.cbx_sq_12.Text = "扇区12";
+            this.cbx_sq_12.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_11
+            // 
+            this.cbx_sq_11.AutoSize = true;
+            this.cbx_sq_11.Location = new System.Drawing.Point(481, 371);
+            this.cbx_sq_11.Name = "cbx_sq_11";
+            this.cbx_sq_11.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_11.TabIndex = 73;
+            this.cbx_sq_11.Text = "扇区11";
+            this.cbx_sq_11.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_10
+            // 
+            this.cbx_sq_10.AutoSize = true;
+            this.cbx_sq_10.Location = new System.Drawing.Point(414, 371);
+            this.cbx_sq_10.Name = "cbx_sq_10";
+            this.cbx_sq_10.Size = new System.Drawing.Size(60, 16);
+            this.cbx_sq_10.TabIndex = 72;
+            this.cbx_sq_10.Text = "扇区10";
+            this.cbx_sq_10.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_9
+            // 
+            this.cbx_sq_9.AutoSize = true;
+            this.cbx_sq_9.Location = new System.Drawing.Point(353, 371);
+            this.cbx_sq_9.Name = "cbx_sq_9";
+            this.cbx_sq_9.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_9.TabIndex = 71;
+            this.cbx_sq_9.Text = "扇区9";
+            this.cbx_sq_9.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_8
+            // 
+            this.cbx_sq_8.AutoSize = true;
+            this.cbx_sq_8.Location = new System.Drawing.Point(292, 371);
+            this.cbx_sq_8.Name = "cbx_sq_8";
+            this.cbx_sq_8.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_8.TabIndex = 70;
+            this.cbx_sq_8.Text = "扇区8";
+            this.cbx_sq_8.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_7
+            // 
+            this.cbx_sq_7.AutoSize = true;
+            this.cbx_sq_7.Location = new System.Drawing.Point(231, 371);
+            this.cbx_sq_7.Name = "cbx_sq_7";
+            this.cbx_sq_7.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_7.TabIndex = 69;
+            this.cbx_sq_7.Text = "扇区7";
+            this.cbx_sq_7.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_6
+            // 
+            this.cbx_sq_6.AutoSize = true;
+            this.cbx_sq_6.Location = new System.Drawing.Point(170, 371);
+            this.cbx_sq_6.Name = "cbx_sq_6";
+            this.cbx_sq_6.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_6.TabIndex = 68;
+            this.cbx_sq_6.Text = "扇区6";
+            this.cbx_sq_6.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_5
+            // 
+            this.cbx_sq_5.AutoSize = true;
+            this.cbx_sq_5.Location = new System.Drawing.Point(109, 371);
+            this.cbx_sq_5.Name = "cbx_sq_5";
+            this.cbx_sq_5.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_5.TabIndex = 67;
+            this.cbx_sq_5.Text = "扇区5";
+            this.cbx_sq_5.UseVisualStyleBackColor = true;
+            // 
+            // cbx_sq_4
+            // 
+            this.cbx_sq_4.AutoSize = true;
+            this.cbx_sq_4.Location = new System.Drawing.Point(48, 371);
+            this.cbx_sq_4.Name = "cbx_sq_4";
+            this.cbx_sq_4.Size = new System.Drawing.Size(54, 16);
+            this.cbx_sq_4.TabIndex = 66;
+            this.cbx_sq_4.Text = "扇区4";
+            this.cbx_sq_4.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -739,14 +886,14 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.cmbCardNote);
+            this.tabPage2.Controls.Add(this.cmbCardOwner);
+            this.tabPage2.Controls.Add(this.cmbLiftNumber);
+            this.tabPage2.Controls.Add(this.cmbCardNumber);
             this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Controls.Add(this.textBox6);
-            this.tabPage2.Controls.Add(this.textBox5);
             this.tabPage2.Controls.Add(this.label13);
             this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.textBox3);
             this.tabPage2.Controls.Add(this.btn_import);
             this.tabPage2.Controls.Add(this.btn_export);
             this.tabPage2.Controls.Add(this.btn_clr);
@@ -755,7 +902,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 52);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1051, 485);
+            this.tabPage2.Size = new System.Drawing.Size(844, 502);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "已发卡数据";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -769,24 +916,10 @@
             this.label14.TabIndex = 11;
             this.label14.Text = "选择备注过滤：";
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(722, 46);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(78, 21);
-            this.textBox6.TabIndex = 10;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(509, 46);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(69, 21);
-            this.textBox5.TabIndex = 9;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(398, 49);
+            this.label13.Location = new System.Drawing.Point(386, 49);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(101, 12);
             this.label13.TabIndex = 8;
@@ -795,11 +928,11 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(615, 18);
+            this.label12.Location = new System.Drawing.Point(603, 21);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 12);
+            this.label12.Size = new System.Drawing.Size(101, 12);
             this.label12.TabIndex = 7;
-            this.label12.Text = "选择电梯过滤：";
+            this.label12.Text = "选择电梯号过滤：";
             // 
             // label11
             // 
@@ -809,21 +942,6 @@
             this.label11.Size = new System.Drawing.Size(89, 12);
             this.label11.TabIndex = 6;
             this.label11.Text = "选择卡号过滤：";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(722, 12);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(78, 21);
-            this.textBox4.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(509, 12);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(69, 21);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // btn_import
             // 
@@ -872,7 +990,6 @@
             this.dgv_IcData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_IcData.Size = new System.Drawing.Size(784, 403);
             this.dgv_IcData.TabIndex = 0;
-            this.dgv_IcData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_IcData_CellContentClick);
             this.dgv_IcData.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_IcData_CellMouseDoubleClick);
             // 
             // tabPage3
@@ -882,7 +999,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 52);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1051, 485);
+            this.tabPage3.Size = new System.Drawing.Size(844, 502);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "主板统计";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -925,152 +1042,45 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // cbx_sq_4
+            // cmbCardNumber
             // 
-            this.cbx_sq_4.AutoSize = true;
-            this.cbx_sq_4.Location = new System.Drawing.Point(48, 371);
-            this.cbx_sq_4.Name = "cbx_sq_4";
-            this.cbx_sq_4.Size = new System.Drawing.Size(54, 16);
-            this.cbx_sq_4.TabIndex = 66;
-            this.cbx_sq_4.Text = "扇区4";
-            this.cbx_sq_4.UseVisualStyleBackColor = true;
+            this.cmbCardNumber.FormattingEnabled = true;
+            this.cmbCardNumber.Location = new System.Drawing.Point(493, 18);
+            this.cmbCardNumber.Name = "cmbCardNumber";
+            this.cmbCardNumber.Size = new System.Drawing.Size(85, 20);
+            this.cmbCardNumber.TabIndex = 12;
+            this.cmbCardNumber.DropDown += new System.EventHandler(this.cmbCardNumber_DropDown);
+            this.cmbCardNumber.SelectedIndexChanged += new System.EventHandler(this.cmbCardNumber_SelectedIndexChanged);
             // 
-            // cbx_sq_5
+            // cmbLiftNumber
             // 
-            this.cbx_sq_5.AutoSize = true;
-            this.cbx_sq_5.Location = new System.Drawing.Point(109, 371);
-            this.cbx_sq_5.Name = "cbx_sq_5";
-            this.cbx_sq_5.Size = new System.Drawing.Size(54, 16);
-            this.cbx_sq_5.TabIndex = 67;
-            this.cbx_sq_5.Text = "扇区5";
-            this.cbx_sq_5.UseVisualStyleBackColor = true;
+            this.cmbLiftNumber.FormattingEnabled = true;
+            this.cmbLiftNumber.Location = new System.Drawing.Point(715, 18);
+            this.cmbLiftNumber.Name = "cmbLiftNumber";
+            this.cmbLiftNumber.Size = new System.Drawing.Size(85, 20);
+            this.cmbLiftNumber.TabIndex = 13;
+            this.cmbLiftNumber.DropDown += new System.EventHandler(this.cmbLiftNumber_DropDown);
+            this.cmbLiftNumber.SelectedIndexChanged += new System.EventHandler(this.cmbLiftNumber_SelectedIndexChanged);
             // 
-            // cbx_sq_6
+            // cmbCardOwner
             // 
-            this.cbx_sq_6.AutoSize = true;
-            this.cbx_sq_6.Location = new System.Drawing.Point(170, 371);
-            this.cbx_sq_6.Name = "cbx_sq_6";
-            this.cbx_sq_6.Size = new System.Drawing.Size(54, 16);
-            this.cbx_sq_6.TabIndex = 68;
-            this.cbx_sq_6.Text = "扇区6";
-            this.cbx_sq_6.UseVisualStyleBackColor = true;
+            this.cmbCardOwner.FormattingEnabled = true;
+            this.cmbCardOwner.Location = new System.Drawing.Point(493, 46);
+            this.cmbCardOwner.Name = "cmbCardOwner";
+            this.cmbCardOwner.Size = new System.Drawing.Size(85, 20);
+            this.cmbCardOwner.TabIndex = 14;
+            this.cmbCardOwner.DropDown += new System.EventHandler(this.cmbCardOwner_DropDown);
+            this.cmbCardOwner.SelectedIndexChanged += new System.EventHandler(this.cmbCardOwner_SelectedIndexChanged);
             // 
-            // cbx_sq_7
+            // cmbCardNote
             // 
-            this.cbx_sq_7.AutoSize = true;
-            this.cbx_sq_7.Location = new System.Drawing.Point(231, 371);
-            this.cbx_sq_7.Name = "cbx_sq_7";
-            this.cbx_sq_7.Size = new System.Drawing.Size(54, 16);
-            this.cbx_sq_7.TabIndex = 69;
-            this.cbx_sq_7.Text = "扇区7";
-            this.cbx_sq_7.UseVisualStyleBackColor = true;
-            // 
-            // cbx_sq_8
-            // 
-            this.cbx_sq_8.AutoSize = true;
-            this.cbx_sq_8.Location = new System.Drawing.Point(292, 371);
-            this.cbx_sq_8.Name = "cbx_sq_8";
-            this.cbx_sq_8.Size = new System.Drawing.Size(54, 16);
-            this.cbx_sq_8.TabIndex = 70;
-            this.cbx_sq_8.Text = "扇区8";
-            this.cbx_sq_8.UseVisualStyleBackColor = true;
-            // 
-            // cbx_sq_9
-            // 
-            this.cbx_sq_9.AutoSize = true;
-            this.cbx_sq_9.Location = new System.Drawing.Point(353, 371);
-            this.cbx_sq_9.Name = "cbx_sq_9";
-            this.cbx_sq_9.Size = new System.Drawing.Size(54, 16);
-            this.cbx_sq_9.TabIndex = 71;
-            this.cbx_sq_9.Text = "扇区9";
-            this.cbx_sq_9.UseVisualStyleBackColor = true;
-            // 
-            // cbx_sq_10
-            // 
-            this.cbx_sq_10.AutoSize = true;
-            this.cbx_sq_10.Location = new System.Drawing.Point(414, 371);
-            this.cbx_sq_10.Name = "cbx_sq_10";
-            this.cbx_sq_10.Size = new System.Drawing.Size(60, 16);
-            this.cbx_sq_10.TabIndex = 72;
-            this.cbx_sq_10.Text = "扇区10";
-            this.cbx_sq_10.UseVisualStyleBackColor = true;
-            // 
-            // cbx_sq_11
-            // 
-            this.cbx_sq_11.AutoSize = true;
-            this.cbx_sq_11.Location = new System.Drawing.Point(481, 371);
-            this.cbx_sq_11.Name = "cbx_sq_11";
-            this.cbx_sq_11.Size = new System.Drawing.Size(60, 16);
-            this.cbx_sq_11.TabIndex = 73;
-            this.cbx_sq_11.Text = "扇区11";
-            this.cbx_sq_11.UseVisualStyleBackColor = true;
-            // 
-            // cbx_sq_12
-            // 
-            this.cbx_sq_12.AutoSize = true;
-            this.cbx_sq_12.Location = new System.Drawing.Point(548, 371);
-            this.cbx_sq_12.Name = "cbx_sq_12";
-            this.cbx_sq_12.Size = new System.Drawing.Size(60, 16);
-            this.cbx_sq_12.TabIndex = 74;
-            this.cbx_sq_12.Text = "扇区12";
-            this.cbx_sq_12.UseVisualStyleBackColor = true;
-            // 
-            // cbx_sq_13
-            // 
-            this.cbx_sq_13.AutoSize = true;
-            this.cbx_sq_13.Location = new System.Drawing.Point(615, 371);
-            this.cbx_sq_13.Name = "cbx_sq_13";
-            this.cbx_sq_13.Size = new System.Drawing.Size(60, 16);
-            this.cbx_sq_13.TabIndex = 75;
-            this.cbx_sq_13.Text = "扇区13";
-            this.cbx_sq_13.UseVisualStyleBackColor = true;
-            // 
-            // cbx_sq_14
-            // 
-            this.cbx_sq_14.AutoSize = true;
-            this.cbx_sq_14.Location = new System.Drawing.Point(682, 371);
-            this.cbx_sq_14.Name = "cbx_sq_14";
-            this.cbx_sq_14.Size = new System.Drawing.Size(60, 16);
-            this.cbx_sq_14.TabIndex = 76;
-            this.cbx_sq_14.Text = "扇区14";
-            this.cbx_sq_14.UseVisualStyleBackColor = true;
-            // 
-            // cbx_sq_15
-            // 
-            this.cbx_sq_15.AutoSize = true;
-            this.cbx_sq_15.Location = new System.Drawing.Point(749, 371);
-            this.cbx_sq_15.Name = "cbx_sq_15";
-            this.cbx_sq_15.Size = new System.Drawing.Size(60, 16);
-            this.cbx_sq_15.TabIndex = 77;
-            this.cbx_sq_15.Text = "扇区15";
-            this.cbx_sq_15.UseVisualStyleBackColor = true;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(19, 348);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(113, 12);
-            this.label15.TabIndex = 78;
-            this.label15.Text = "选择要加密的扇区：";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(147, 344);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 19);
-            this.button1.TabIndex = 79;
-            this.button1.Text = "全选";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(237, 344);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 19);
-            this.button2.TabIndex = 80;
-            this.button2.Text = "清空";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cmbCardNote.FormattingEnabled = true;
+            this.cmbCardNote.Location = new System.Drawing.Point(715, 46);
+            this.cmbCardNote.Name = "cmbCardNote";
+            this.cmbCardNote.Size = new System.Drawing.Size(85, 20);
+            this.cmbCardNote.TabIndex = 15;
+            this.cmbCardNote.DropDown += new System.EventHandler(this.cmbCardNote_DropDown);
+            this.cmbCardNote.SelectedIndexChanged += new System.EventHandler(this.cmbCardNote_SelectedIndexChanged);
             // 
             // MainFrom
             // 
@@ -1082,7 +1092,8 @@
             this.Controls.Add(this.tbc_Fun);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainFrom";
-            this.Text = "佛山恒新电子有限公司 IC卡系统软件 V2.4.1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "佛山恒新电子有限公司 IC卡系统软件 V2.4.2";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainFrom_FormClosed);
             this.tbc_Fun.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -1173,15 +1184,11 @@
         private System.Windows.Forms.Button btn_export;
         private System.Windows.Forms.Button btn_clr;
         private System.Windows.Forms.Button btn_import;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox tbxIC_bz;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.CheckBox cbx_sq_4;
         private System.Windows.Forms.CheckBox cbx_sq_15;
@@ -1198,5 +1205,9 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmbCardNumber;
+        private System.Windows.Forms.ComboBox cmbCardNote;
+        private System.Windows.Forms.ComboBox cmbCardOwner;
+        private System.Windows.Forms.ComboBox cmbLiftNumber;
     }
 }

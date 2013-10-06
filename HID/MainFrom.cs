@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -14,7 +15,6 @@ namespace HID
         public byte[] ReadBuffer = new byte[64];
         public byte[] WriteBuffer = new byte[65];
         public CheckBox[] cbx_lc;
-        //public string strIC_ID;
 
         int bytesWritten,hid_index;
         bool my_hid_opened = false;
@@ -83,8 +83,6 @@ namespace HID
             rdbtn_SetDayN.Checked = true;
             rdbtn_SetCountY.Checked = false;
             rdbtn_SetCountN.Checked = true;
-
-            //textBox3.Text = Application.StartupPath;
 
             #endregion
 
@@ -1046,6 +1044,7 @@ namespace HID
             //}
         }
 
+        #region 导出excel表
         private void btn_export_Click(object sender, EventArgs e)
         {
             try
@@ -1065,17 +1064,22 @@ namespace HID
                     filename = filename.Substring(index + 1);//获取excel名称(新建表的路径相对于SaveFileDialog的路径)  
                     //select * into 建立 新的表[[Excel 8.0;database= excel名].[sheet名] 
                     //如果是新建sheet表不能加$,如果向sheet里插入数据要加$.sheet最多存储65535条数据
-                    string sql = "select top 65535 *  into   [Excel 8.0;database=" 
-                        + filename + "].[Sheet1] from tb_ICCard_Data where 卡号 ="
-                        +Convert.ToInt32(textBox3.Text);
-               
+
+                    string subSql = "select top 65535 *  into   [Excel 8.0;database="
+                                 + filename + "].[Sheet1] from tb_ICCard_Data where 1=1";
+                    string sql = combineSqlFilter(subSql);
+
                     int flag = DBHelper.executeCommand(sql);
-                    if (flag>0)
+                    if (flag > 0)
                     {
                         MessageBox.Show("导出数据成功", "导出数据", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                    
-                    DataSet ds = DBHelper.getDs("select * from tb_ICCard_Data", "tb_Data");
+                    else
+                    {
+                        MessageBox.Show("导出数据失败", "导出数据", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    DataSet ds = DBHelper.getDs(combineSqlFilter(), "tb_Data");
 
                     dgv_IcData.DataSource = ds.Tables[0];
                     dgv_IcData.Columns[1].Visible = false;
@@ -1084,14 +1088,16 @@ namespace HID
                     dgv_IcData.Columns[5].Visible = false;
                     dgv_IcData.Columns[6].Visible = false;
                 }
-                
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-        }
+        } 
+        #endregion
 
+        #region excel表导入数据库
         private void btn_import_Click(object sender, EventArgs e)
         {
             try
@@ -1113,7 +1119,7 @@ namespace HID
                                 filename + "].[Sheet1] where IC_ID not in (select distinct IC_ID from tb_ICCard_Data) ";
                     int flag = DBHelper.executeCommand(sql);
 
-                    if (flag>0)
+                    if (flag > 0)
                     {
                         MessageBox.Show("导入数据成功", "导入数据", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         DataSet ds = DBHelper.getDs("select * from tb_ICCard_Data", "tb_Data");
@@ -1135,12 +1141,10 @@ namespace HID
             {
                 MessageBox.Show(ex.ToString());
             }
-            finally
-            {
-                //db.Close();
-            }  
-        }
+        } 
+        #endregion
 
+        #region 清空数据库
         private void btn_clr_Click(object sender, EventArgs e)
         {
             try
@@ -1153,7 +1157,7 @@ namespace HID
                 }
                 else
                 {
-                    MessageBox.Show("删除数据库数据失败", "删除数据库数据", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("删除数据库数据失败", "删除数据库数据", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
                 DataSet ds = DBHelper.getDs("select * from tb_ICCard_Data", "tb_Data");
@@ -1169,26 +1173,176 @@ namespace HID
             {
                 MessageBox.Show(ex.ToString());
             }
+        } 
+        #endregion
+
+        #region 发卡数据sql条件过滤查询组合
+        private string combineSqlFilter(string subSql)
+        {
+            StringBuilder sql = new StringBuilder(subSql);
+            if (cmbCardNumber.SelectedIndex > 0)
+            {
+                var cmbCardNumberValue = cmbCardNumber.SelectedItem.ToString();
+                sql.Append( @" and 卡号 =" + Convert.ToInt32(cmbCardNumberValue));
+            }
+            if (cmbLiftNumber.SelectedIndex > 0)
+            {
+                var cmbLiftNumberValue = cmbLiftNumber.SelectedItem.ToString();
+                sql.Append( @" and 电梯号 ='" + cmbLiftNumberValue + "'");
+            }
+            if (cmbCardOwner.SelectedIndex > 0)
+            {
+                var cmbCardOwnerValue = cmbCardOwner.SelectedItem.ToString();
+               sql.Append( @" and 持卡人 ='" + cmbCardOwnerValue + "'");
+            }
+            if (cmbCardNote.SelectedIndex > 0)
+            {
+                var cmbCardNoteValue = cmbCardNote.SelectedItem.ToString();
+               sql.Append( @" and 备注 ='" + cmbCardNoteValue + "'");
+            }
+
+            return sql.ToString();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private string combineSqlFilter()
         {
-            DataSet ds = DBHelper.getDs("select * from tb_ICCard_Data where 卡号 ="+ Convert.ToInt32(textBox3.Text), "tb_Data");
+            string sql = @"select * from tb_ICCard_Data where 1=1 ";
+            if (cmbCardNumber.SelectedIndex > 0)
+            {
+                var cmbCardNumberValue = cmbCardNumber.SelectedItem.ToString();
+                sql += @" and 卡号 =" + Convert.ToInt32(cmbCardNumberValue);
+            }
+            if (cmbLiftNumber.SelectedIndex > 0)
+            {
+                var cmbLiftNumberValue = cmbLiftNumber.SelectedItem.ToString();
+                sql += @" and 电梯号 ='" + cmbLiftNumberValue + "'";
+            }
+            if (cmbCardOwner.SelectedIndex > 0)
+            {
+                var cmbCardOwnerValue = cmbCardOwner.SelectedItem.ToString();
+                sql += @" and 持卡人 ='" + cmbCardOwnerValue + "'";
+            }
+            if (cmbCardNote.SelectedIndex > 0)
+            {
+                var cmbCardNoteValue = cmbCardNote.SelectedItem.ToString();
+                sql += @" and 备注 ='" + cmbCardNoteValue + "'";
+            }
+
+            return sql;
+        } 
+        #endregion
+
+        #region 选择卡号过滤事件
+        private void cmbCardNumber_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet ds = DBHelper.getDs(combineSqlFilter(), "tb_Data");
             DataTable dt = ds.Tables[0];
             DataView dv = new DataView(dt);
             dgv_IcData.DataSource = dv;
         }
 
-        /// <summary>
-        /// 关闭窗体事件
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        private void cmbCardNumber_DropDown(object sender, EventArgs e)
+        {
+            string cmdText = @"select distinct 卡号 from tb_ICCard_Data";
+            OleDbCommand oleDbCommand = new OleDbCommand(cmdText);
+            DataSet ds = DBHelper.getDs(oleDbCommand, "tb_Data");
+            DataTable dt = ds.Tables[0];
+
+            cmbCardNumber.Items.Clear();
+            cmbCardNumber.Items.Add(@" ");
+            foreach (DataRow row in dt.Rows)
+            {
+                var r = row[0].ToString();
+                cmbCardNumber.Items.Add(r);
+            }
+        } 
+        #endregion
+
+        #region 选择电梯号过滤事件
+        private void cmbLiftNumber_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet ds = DBHelper.getDs(combineSqlFilter(), "tb_Data");
+            DataTable dt = ds.Tables[0];
+            DataView dv = new DataView(dt);
+            dgv_IcData.DataSource = dv;
+        }
+
+        private void cmbLiftNumber_DropDown(object sender, EventArgs e)
+        {
+            string cmdText = @"select distinct 电梯号 from tb_ICCard_Data";
+            OleDbCommand oleDbCommand = new OleDbCommand(cmdText);
+            DataSet ds = DBHelper.getDs(oleDbCommand, "tb_Data");
+            DataTable dt = ds.Tables[0];
+
+            cmbLiftNumber.Items.Clear();
+            cmbLiftNumber.Items.Add(@" ");
+            foreach (DataRow row in dt.Rows)
+            {
+                var r = row[0].ToString();
+                cmbLiftNumber.Items.Add(r);
+            }
+        } 
+        #endregion
+
+        #region 选择持卡人过滤事件
+        private void cmbCardOwner_DropDown(object sender, EventArgs e)
+        {
+            string cmdText = @"select distinct 持卡人 from tb_ICCard_Data";
+            OleDbCommand oleDbCommand = new OleDbCommand(cmdText);
+            DataSet ds = DBHelper.getDs(oleDbCommand, "tb_Data");
+            DataTable dt = ds.Tables[0];
+
+            cmbCardOwner.Items.Clear();
+            cmbCardOwner.Items.Add(@" ");
+            foreach (DataRow row in dt.Rows)
+            {
+                var r = row[0].ToString();
+                cmbCardOwner.Items.Add(r);
+            }
+        }
+
+        private void cmbCardOwner_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet ds = DBHelper.getDs(combineSqlFilter(), "tb_Data");
+            DataTable dt = ds.Tables[0];
+            DataView dv = new DataView(dt);
+            dgv_IcData.DataSource = dv;
+        } 
+        #endregion
+
+        #region 选择备注过滤事件
+        private void cmbCardNote_DropDown(object sender, EventArgs e)
+        {
+            string cmdText = @"select distinct 备注 from tb_ICCard_Data";
+            OleDbCommand oleDbCommand = new OleDbCommand(cmdText);
+            DataSet ds = DBHelper.getDs(oleDbCommand, "tb_Data");
+            DataTable dt = ds.Tables[0];
+
+            cmbCardNote.Items.Clear();
+            cmbCardNote.Items.Add(@" ");
+            foreach (DataRow row in dt.Rows)
+            {
+                var r = row[0].ToString();
+                cmbCardNote.Items.Add(r);
+            }
+        }
+
+        private void cmbCardNote_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet ds = DBHelper.getDs(combineSqlFilter(), "tb_Data");
+            DataTable dt = ds.Tables[0];
+            DataView dv = new DataView(dt);
+            dgv_IcData.DataSource = dv;
+        } 
+        #endregion
+
+        #region 关闭窗体事件
         private void MainFrom_FormClosed(object sender, FormClosedEventArgs e)
         {
             // 关闭窗体时，关闭数据库连接
             DBHelper.closeCon();
-        }
+        } 
+        #endregion
 
         private void dgv_IcData_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -1219,23 +1373,13 @@ namespace HID
             FrmSMBoardID.Show();
         }
 
-        private void dgv_IcData_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void gbx_basic_Enter(object sender, EventArgs e)
         {
 
         }
 
-        //public string IC_ID
-        //{
-        //    get { return strIC_ID; }
-        //    set { strIC_ID = value; }
-        //}
-
         private MainBoard _mainBoard;
+
         public MainBoard mainboard
         {
             get { return this._mainBoard; }
@@ -1260,5 +1404,6 @@ namespace HID
         {
 
         }
+
     }
 }
